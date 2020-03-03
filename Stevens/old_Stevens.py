@@ -146,6 +146,8 @@ class Stevens:
 
         self.time_updated = datetime.datetime.today()
 
+        self.school_list = self.get_school_list()
+
     def get_room_list(self):
         r = requests.get(self.room_schedule_url)
         return [Room(html_chunk) for html_chunk in r.text.split('<b id=')[1:]]
@@ -163,3 +165,9 @@ class Stevens:
 
     def find_schedule(self):
         pass
+
+    def get_school_list(self):
+        for room in self.room_list:
+            print(room)
+
+        exit()
