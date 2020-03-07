@@ -2,6 +2,87 @@ import pickle
 import os
 
 
+def string_to_length(some_str, length, flush="left", dots=False):
+    new_str = some_str[:min(length, len(some_str))]
+    if flush == "left":
+        new_str += max(0, length - len(some_str)) * " "
+    else:
+        new_str = max(0, length - len(some_str)) * " " + new_str
+
+    if dots and length < len(some_str) and flush == "left":
+        new_str = new_str[:-3] + "..."
+    return new_str
+
+
+# def attrib_list_to_dict(attrib_list):
+#     d = {}
+#     for some_attrib in attrib_list:
+#         d[some_attrib] = attrib_list[some_attrib]
+#     return d
+
+
+def string_to_alternating_letter_to_num(some_string):
+    some_string = some_string.replace(" ", "")
+    ret_list = []
+    temp_string = ""
+    is_letter = some_string[0].isalpha()
+    prev_is_letter = is_letter
+    for letter in some_string:
+        temp_string += letter
+        is_letter = letter.isalpha()
+        if is_letter != prev_is_letter:
+            ret_list.append(temp_string[:-1])
+            temp_string = temp_string[-1]
+        prev_is_letter = is_letter
+    ret_list.append(temp_string)
+    return ret_list
+
+
+def dict_to_string(data_dict, dict_name=""):
+    ret_str = "Dict: " + dict_name
+    for key in data_dict:
+        ret_str += "\n\t" + str(key) + ": " + str(data_dict[key])
+    return ret_str
+
+
+def clean_dict(data_dict):
+    new_dict = {}
+    for key in remove_empty_values(data_dict):
+        new_key = ""
+        for i, letter in enumerate(str(key)):
+            if letter.isupper() and i != 0:
+                new_key += "_" + letter.lower()
+            else:
+                new_key += letter.lower()
+        new_dict[new_key] = data_dict[key]
+    return new_dict
+
+
+# ---------------------------------------------------------------------
+
+
+def find_first_occurrence_in_dicts(key, *dict_list):
+    for data_dict in dict_list:
+        if key in data_dict:
+            return data_dict[key]
+    return None
+
+
+def remove_empty_values(data_dict):
+    ret_dict = {}
+    for key in data_dict:
+        if type(data_dict[key]) == str and data_dict[key].strip() != "":
+            ret_dict[key] = data_dict[key]
+    return ret_dict
+
+
+def tab_string(data_str):
+    return "\t" + data_str.replace("\n", "\n\t")
+
+
+# ---------------------------------------------------------------------
+
+
 def txt_doc_to_str(some_path):
     if os.path.exists(some_path):
         txt_doc = open(some_path, "r")
