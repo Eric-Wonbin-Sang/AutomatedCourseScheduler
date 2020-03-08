@@ -5,6 +5,17 @@ from General import Constants, Functions
 
 class Section:
 
+    activity_dict = {
+        "LEC": "lecture",
+        "PRA": "",
+        "QUZ": "quiz",
+        "L/L": "",
+        "RCT": "recitation",
+        "SEM": "seminar",
+        "LAB": "lab",
+        "None": ""
+    }
+
     def __init__(self, parent_course, xml):
 
         self.xml = xml
@@ -13,7 +24,7 @@ class Section:
 
         self.section = self.main_attrib_dict.get("section")
         self.call_number = self.main_attrib_dict.get("call_number")
-        self.activity = Functions.find_first_occurrence_in_dicts("activity", *self.meeting_dict_list)
+        self.activity = str(Functions.find_first_occurrence_in_dicts("activity", *self.meeting_dict_list))
         self.room = Functions.find_first_occurrence_in_dicts("room", *self.meeting_dict_list)
         self.min_credit = self.main_attrib_dict.get("min_credit")
         self.max_credit = self.main_attrib_dict.get("max_credit")

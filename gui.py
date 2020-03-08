@@ -1,9 +1,27 @@
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
+from kivy.graphics.context_instructions import Color
+from kivy.graphics.vertex_instructions import Rectangle
 
 from Stevens import Stevens
 
 from GUIElements import Selector, AddSelectorButton, StartButton
+
+
+class SelectorLayout(BoxLayout):
+    def __init__(self):
+        super().__init__(
+            orientation="vertical",
+            spacing=15,
+            padding=10
+        )
+        with self.canvas.before:
+            self.color_widget = Color(50/255, 132/255, 171/255)
+            self._rectangle = Rectangle()
+
+    def on_size(self, *args):
+        self._rectangle.size = self.size
+        self._rectangle.pos = self.pos
 
 
 class MyApp(App):
@@ -29,14 +47,10 @@ class MyApp(App):
         return gui_layout
 
     def get_selector_layout(self):
-        selector_layout = BoxLayout(
-            orientation="vertical",
-            spacing=15,
-            padding=10
-        )
+        selector_layout = SelectorLayout()
+
         selector_layout.add_widget(Selector.Selector(selector_layout, stevens=self.stevens))
 
-        print(selector_layout.spacing)
         return selector_layout
 
 
