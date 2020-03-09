@@ -3,8 +3,8 @@
 <!--Last update: 4-Nov-2008 20:28-->
 <!--Original Author: Peter Garafano-->
 <!--This data is solely for the use of Stevens Institute of Technology, its students and faculty.-->
-<!--File created: Mon Mar  9 00:00:30 2020-->
-<!--The xml file was 851 seconds old.-->
+<!--File created: Mon Mar  9 13:28:10 2020-->
+<!--The xml file was 170 seconds old.-->
 <!--Courses parsed: 2203-->
 <!--Meetings parsed: 2238-->
 <!--Requirements parsed: 2769-->
@@ -3290,7 +3290,7 @@
 		<Meeting Day="TBA" Site="Castle Point" Building="OFF" Room="TBA" Activity="PRA"/>
 		<Requirement Control="PDP" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
-	<Course Section="D 890A" Title="Maintenance of Active Record" CallNumber="10685" MinCredit="0" MaxCredit="0" MaxEnrollment="999" CurrentEnrollment="11" Status="O" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="STAFF" Term="2020S">
+	<Course Section="D 890A" Title="Maintenance of Active Record" CallNumber="10685" MinCredit="0" MaxCredit="0" MaxEnrollment="999" CurrentEnrollment="12" Status="O" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="STAFF" Term="2020S">
 		<Meeting Day="TBA" Site="Castle Point" Building="N/A" Room="N/A" Activity="PRA"/>
 		<Requirement Control="PDP" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>

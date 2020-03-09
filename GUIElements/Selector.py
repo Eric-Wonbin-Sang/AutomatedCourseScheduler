@@ -1,6 +1,6 @@
 from kivy.uix.boxlayout import BoxLayout
 
-from GUIElements import SectionSpinner, CourseSpinner, SubjectSpinner, RemoveSelectorButton
+from GUIElements import CourseSpinner, SubjectSpinner, RemoveSelectorButton, SectionPopup
 
 
 class Selector(BoxLayout):
@@ -17,8 +17,8 @@ class Selector(BoxLayout):
         self.parent_layout = parent_layout
         self.stevens = stevens
 
-        self.section_spinner = SectionSpinner.SectionSpinner(self.stevens)
-        self.course_spinner = CourseSpinner.CourseSpinner(self.stevens, self.section_spinner)
+        self.section_button = SectionPopup.SectionButton(self.stevens)
+        self.course_spinner = CourseSpinner.CourseSpinner(self.stevens, self.section_button.section_popup)
         self.subject_spinner = SubjectSpinner.SubjectSpinner(self.stevens, self.course_spinner, self.section_spinner)
         self.remove_button = RemoveSelectorButton.RemoveSelectorButton(self, parent_layout)
 
@@ -27,7 +27,7 @@ class Selector(BoxLayout):
     def add_elements(self):
         self.add_widget(self.subject_spinner)
         self.add_widget(self.course_spinner)
-        self.add_widget(self.section_spinner)
+        self.add_widget(self.section_button)
         self.add_widget(self.remove_button)
 
     def get_section_list(self):
