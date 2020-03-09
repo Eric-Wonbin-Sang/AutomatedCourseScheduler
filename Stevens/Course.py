@@ -10,10 +10,20 @@ class Course:
         self.parent_subject = parent_subject
 
         self.section_list = section_list
+        self.activity_dict = self.get_activity_dict()
 
     def update_section_parents(self):
         for section in self.section_list:
             section.course_parent = self
+
+    def get_activity_dict(self):
+        activity_dict = {}
+        for section in self.section_list:
+            if section.activity not in activity_dict:
+                activity_dict[section.activity] = [section]
+            else:
+                activity_dict[section.activity] += [section]
+        return activity_dict
 
     def __str__(self, **kwargs):
         ret_str = "Course ID: {}, section count: {}".format(self.id, len(self.section_list))
