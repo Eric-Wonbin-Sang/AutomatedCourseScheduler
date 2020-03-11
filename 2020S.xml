@@ -3,8 +3,8 @@
 <!--Last update: 4-Nov-2008 20:28-->
 <!--Original Author: Peter Garafano-->
 <!--This data is solely for the use of Stevens Institute of Technology, its students and faculty.-->
-<!--File created: Mon Mar  9 13:28:10 2020-->
-<!--The xml file was 170 seconds old.-->
+<!--File created: Wed Mar 11 18:06:06 2020-->
+<!--The xml file was 267 seconds old.-->
 <!--Courses parsed: 2203-->
 <!--Meetings parsed: 2238-->
 <!--Requirements parsed: 2769-->
@@ -3290,7 +3290,7 @@
 		<Meeting Day="TBA" Site="Castle Point" Building="OFF" Room="TBA" Activity="PRA"/>
 		<Requirement Control="PDP" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
-	<Course Section="D 890A" Title="Maintenance of Active Record" CallNumber="10685" MinCredit="0" MaxCredit="0" MaxEnrollment="999" CurrentEnrollment="12" Status="O" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="STAFF" Term="2020S">
+	<Course Section="D 890A" Title="Maintenance of Active Record" CallNumber="10685" MinCredit="0" MaxCredit="0" MaxEnrollment="999" CurrentEnrollment="13" Status="O" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="STAFF" Term="2020S">
 		<Meeting Day="TBA" Site="Castle Point" Building="N/A" Room="N/A" Activity="PRA"/>
 		<Requirement Control="PDP" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
@@ -4181,7 +4181,7 @@
 		<Meeting Day="R" StartTime="11:30:00Z" EndTime="14:00:00Z" Site="Castle Point" Building="P" Room="116" Activity="LEC"/>
 		<Requirement Control="PIN" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
-	<Course Section="EM 224CA" Title="Informatics &amp; Softwr Developmnt" CallNumber="12534" MinCredit="3" MaxCredit="3" MaxEnrollment="0" CurrentEnrollment="1" Status="C" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="" Term="2020S"/>
+	<Course Section="EM 224CA" Title="Informatics &amp; Softwr Developmnt" CallNumber="12534" MinCredit="3" MaxCredit="3" MaxEnrollment="0" CurrentEnrollment="1" Status="C" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="Saremi R" Term="2020S"/>
 	<Course Section="EM 275A" Title="Project Management" CallNumber="10856" MinCredit="3" MaxCredit="3" MaxEnrollment="33" CurrentEnrollment="28" Status="O" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="Asan O" Term="2020S">
 		<Meeting Day="W" StartTime="5:00:00Z" EndTime="5:50:00Z" Site="Castle Point" Building="BC" Room="219" Activity="LEC"/>
 		<Meeting Day="W" StartTime="6:00:00Z" EndTime="7:50:00Z" Site="Castle Point" Building="BC" Room="219" Activity="LEC"/>
@@ -5495,7 +5495,7 @@
 		<Requirement Control="CS" Argument="" Value1="MA  124AA" Operator="" Value2=""/>
 		<Requirement Control="CS" Argument="" Value1="D   110A" Operator="" Value2=""/>
 	</Course>
-	<Course Section="MA 123AA" Title="Series,Vectors,Functns &amp; Surface" CallNumber="11107" MinCredit="2" MaxCredit="2" MaxEnrollment="45" CurrentEnrollment="40" Status="O" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="Cannizzo J" Term="2020S">
+	<Course Section="MA 123AA" Title="Series,Vectors,Functns &amp; Surface" CallNumber="11107" MinCredit="2" MaxCredit="2" MaxEnrollment="45" CurrentEnrollment="41" Status="O" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="Cannizzo J" Term="2020S">
 		<Meeting Day="MWF" StartTime="5:00:00Z" EndTime="5:50:00Z" Site="Castle Point" Building="X" Room="218B" Activity="LEC"/>
 		<Requirement Control="CA" Argument="" Value1="RCT" Operator="" Value2=""/>
 		<Requirement Control="CS" Argument="" Value1="MA  122A" Operator="" Value2=""/>
@@ -5564,7 +5564,7 @@
 		<Requirement Control="CS" Argument="" Value1="MA  124RAA" Operator="" Value2=""/>
 		<Requirement Control="CS" Argument="" Value1="D   110A" Operator="" Value2=""/>
 	</Course>
-	<Course Section="MA 123RAA" Title="Series,Vectors,Functns &amp; Surface" CallNumber="11121" MinCredit="0" MaxCredit="0" MaxEnrollment="24" CurrentEnrollment="23" Status="O" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="Muth A" Term="2020S">
+	<Course Section="MA 123RAA" Title="Series,Vectors,Functns &amp; Surface" CallNumber="11121" MinCredit="0" MaxCredit="0" MaxEnrollment="24" CurrentEnrollment="24" Status="C" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="Muth A" Term="2020S">
 		<Meeting Day="TR" StartTime="5:30:00Z" EndTime="6:20:00Z" Site="Castle Point" Building="P" Room="216" Activity="RCT"/>
 		<Requirement Control="CA" Argument="" Value1="LEC" Operator="" Value2=""/>
 		<Requirement Control="CS" Argument="" Value1="MA  122RA" Operator="" Value2=""/>
@@ -6912,7 +6912,7 @@
 		<Meeting Day="TBA" Site="Castle Point" Building="N/A" Room="N/A" Activity="LEC"/>
 		<Requirement Control="PAD" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
-	<Course Section="ME 960B" Title="Research in Mechanical Engineer'" CallNumber="11354" MinCredit="1" MaxCredit="60" MaxEnrollment="999" CurrentEnrollment="2" Status="O" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="Parziale N" Term="2020S">
+	<Course Section="ME 960B" Title="Research in Mechanical Engineer'" CallNumber="11354" MinCredit="1" MaxCredit="60" MaxEnrollment="999" CurrentEnrollment="3" Status="O" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="Parziale N" Term="2020S">
 		<Meeting Day="TBA" Site="Castle Point" Building="N/A" Room="N/A" Activity="LEC"/>
 		<Requirement Control="PAD" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
@@ -8261,7 +8261,7 @@
 		<Requirement Control="CA" Argument="" Value1="RCT" Operator="" Value2=""/>
 		<Requirement Control="CS" Argument="" Value1="D   110C" Operator="" Value2=""/>
 	</Course>
-	<Course Section="PEP 112B" Title="Electricity &amp; Magnetism" CallNumber="11674" MinCredit="0" MaxCredit="0" MaxEnrollment="105" CurrentEnrollment="105" Status="C" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="Pastore R" Term="2020S">
+	<Course Section="PEP 112B" Title="Electricity &amp; Magnetism" CallNumber="11674" MinCredit="0" MaxCredit="0" MaxEnrollment="105" CurrentEnrollment="104" Status="O" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="Pastore R" Term="2020S">
 		<Meeting Day="MF" StartTime="6:00:00Z" EndTime="6:50:00Z" Site="Castle Point" Building="K" Room="228" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="PEP 111" Operator="" Value2=""/>
 		<Requirement Control="R&amp;" Argument="" Value1="MA  115" Operator="" Value2="MA  122"/>

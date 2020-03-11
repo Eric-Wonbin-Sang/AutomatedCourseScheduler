@@ -2,10 +2,12 @@ from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.graphics.context_instructions import Color
 from kivy.graphics.vertex_instructions import Rectangle
+from kivy.core.window import Window
 
 from Stevens import Stevens
 
-from GUIElements import Selector, AddSelectorButton, StartButton
+from GUIElements import Selector
+from GUIElements import Buttons
 
 
 class SelectorLayout(BoxLayout):
@@ -41,8 +43,8 @@ class MyApp(App):
         )
 
         gui_layout.add_widget(self.selector_layout)
-        gui_layout.add_widget(AddSelectorButton.AddSelectorButton(self.stevens, self.selector_layout))
-        gui_layout.add_widget(StartButton.StartButton(self.stevens, self.selector_layout))
+        self.selector_layout.add_widget(Buttons.AddSelectorButton(self.stevens, self.selector_layout))
+        gui_layout.add_widget(Buttons.StartButton(self.stevens, self.selector_layout))
 
         return gui_layout
 
@@ -54,4 +56,5 @@ class MyApp(App):
         return selector_layout
 
 
+Window.size = (400, 700)
 MyApp().run()
