@@ -72,7 +72,7 @@ class CourseInput(TextInput):
         for subject in self.stevens.term.subject_list:
             for course in subject.course_list:
                 course_list.append(course)
-                button_text = "{} {} - {}".format(course.subject_id, course.id, "title")
+                button_text = "{} {} - {}".format(course.subject_id, course.id, course.section_list[0].title)
                 option_list.append(button_text)
         return course_list, option_list
 
@@ -83,7 +83,8 @@ class CourseInput(TextInput):
                 if self.text.lower().replace(" ", "") in option.lower().replace(" ", ""):
                     button = Button(
                         text=option,
-                        size_hint_y=None, height=30
+                        size_hint_y=None,
+                        height=30
                     )
                     button.bind(on_release=lambda btn: drop_down.select(btn.text))
                     drop_down.add_widget(button)
@@ -131,7 +132,6 @@ class CourseInput(TextInput):
             )
 
         for activity_key in course.activity_dict:
-
             activity_layout = BoxLayout(
                 orientation="vertical",
                 padding=10,
@@ -187,10 +187,9 @@ class PopupCloseButton(Button):
 
     def on_press(self):
         self.pop_up.dismiss()
-        print(self.pop_up.curr_course)
         if self.pop_up.curr_course:
             self.pop_up.selector_button.text = "{} {} - {}".format(
                 self.pop_up.curr_course.subject_id,
                 self.pop_up.curr_course.id,
-                "title"
+                self.pop_up.curr_course.section_list[0].title
             )

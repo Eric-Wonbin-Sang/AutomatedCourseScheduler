@@ -23,6 +23,7 @@ class Section:
         self.main_attrib_dict, self.meeting_dict_list, self.requirement_dict_list = self.get_dictionaries()
 
         self.section = self.main_attrib_dict.get("section")
+        self.title = self.main_attrib_dict.get("title")
         self.call_number = self.main_attrib_dict.get("call_number")
         self.activity = str(Functions.find_first_occurrence_in_dicts("activity", *self.meeting_dict_list))
         self.room = Functions.find_first_occurrence_in_dicts("room", *self.meeting_dict_list)

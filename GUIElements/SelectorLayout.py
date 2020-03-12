@@ -4,9 +4,9 @@ from kivy.uix.button import Button
 from GUIElements.SelectorPopup import SelectorPopup
 
 
-class Selector(BoxLayout):
+class SelectorLayout(BoxLayout):
 
-    def __init__(self, parent_layout, stevens):
+    def __init__(self, selector_group, stevens):
         super().__init__(
             orientation='horizontal',
             size_hint=(1, .2),
@@ -15,11 +15,11 @@ class Selector(BoxLayout):
             padding=10
         )
 
-        self.parent_layout = parent_layout
+        self.selector_group = selector_group
         self.stevens = stevens
 
         self.selector_button = SelectorButton(stevens=self.stevens)
-        self.remove_button = RemoveSelectorButton(self, parent_layout)
+        self.remove_button = RemoveSelectorButton(self, self.selector_group)
 
         self.add_elements()
 
@@ -27,26 +27,29 @@ class Selector(BoxLayout):
         self.add_widget(self.selector_button)
         self.add_widget(self.remove_button)
 
-    # def get_section_list(self):
-    #     if self.section_spinner.text != "Any":
-    #         return [section for subject in self.stevens.term.subject_list
-    #                 for course in subject.course_list
-    #                 for section in course.section_list
-    #                 if subject.id == self.subject_spinner.text and
-    #                 course.id == self.course_spinner.text and
-    #                 section.id == self.section_spinner.text]
-    #
-    #     section_list = []
-    #     for subject in self.stevens.term.subject_list:
-    #         for course in subject.course_list:
-    #             if subject.id == self.subject_spinner.text and course.id == self.course_spinner.text:
-    #                 section_list += course.section_list
-    #     return section_list
+    def get_section_list(self):
+
+        section_id_list = []
+        for grid_layout in self.selector_button.selector_popup.section_layout.children:
+            for i in range(int(len(grid_layout.children)/2)):
+                scroll_view = grid_layout.children[i]
+                for box_layout in scroll_view.children:
+                    for section_layout in box_layout.children:
+                        checkbox, label = section_layout.children
+                        if checkbox.state == "down":
+                            section_id_list.append(label.text)
+
+        section_list = []
+        if self.selector_button.selector_popup.curr_course:
+            for section in self.selector_button.selector_popup.curr_course.section_list:
+                if section.id in section_id_list:
+                    section_list.append(section)
+        return section_list
 
 
 class RemoveSelectorButton(Button):
 
-    def __init__(self, selector, selector_layout):
+    def __init__(self, selector_layout, selector_group):
         super().__init__(
             text="Remove",
             size_hint=(.2, None),
@@ -54,12 +57,12 @@ class RemoveSelectorButton(Button):
             pos_hint={'center_x': .5, 'center_y': .5}
         )
 
-        self.selector = selector
         self.selector_layout = selector_layout
+        self.selector_group = selector_group
 
     def on_press(self):
-        if self.selector_layout.children:
-            self.selector_layout.remove_widget(self.selector)
+        if self.selector_group.children:
+            self.selector_group.remove_widget(self.selector_layout)
 
 
 class SelectorButton(Button):
