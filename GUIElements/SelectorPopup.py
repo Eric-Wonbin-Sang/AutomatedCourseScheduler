@@ -17,25 +17,9 @@ class SelectorPopup(Popup):
 
         self.selector_button = selector_button
         self.stevens = stevens
-        self.popup_layout = BoxLayout(
-            orientation='vertical',
-            # size_hint=(1, .2),
-            pos_hint={'center_x': .5, 'center_y': .5},
-            spacing=15,
-            padding=10
-        )
 
-        self.section_layout = BoxLayout(
-            orientation='vertical',
-            # size_hint=(1, .2),
-            # pos_hint={'center_x': .5, 'center_y': .5},
-            spacing=15,
-            padding=10
-        )
-
-        self.popup_layout.add_widget(CourseInput(self.section_layout, self.stevens))
-        self.popup_layout.add_widget(self.section_layout)
-        self.popup_layout.add_widget(PopupCloseButton(self))
+        self.popup_layout, self.section_layout = self.get_layouts()
+        self.curr_course = None
 
         super().__init__(
             title="Section Selector",
@@ -44,15 +28,31 @@ class SelectorPopup(Popup):
             auto_dismiss=False
         )
 
-    def set_popup_layout(self):
-        self.content = self.get_popup_layout()
+    def get_layouts(self):
+        popup_layout = BoxLayout(
+            orientation='vertical',
+            pos_hint={'center_x': .5, 'center_y': .5},
+            spacing=15,
+            padding=10
+        )
+        popup_layout.add_widget(CourseInput(self, self.stevens))
+
+        section_layout = BoxLayout(
+            orientation='vertical',
+            spacing=15,
+            padding=10
+        )
+
+        popup_layout.add_widget(section_layout)
+        popup_layout.add_widget(PopupCloseButton(pop_up=self))
+        return popup_layout, section_layout
 
 
 class CourseInput(TextInput):
 
-    def __init__(self, section_layout, stevens):
+    def __init__(self, pop_up, stevens):
 
-        self.section_layout = section_layout
+        self.pop_up = pop_up
         self.stevens = stevens
 
         super().__init__(
@@ -111,8 +111,10 @@ class CourseInput(TextInput):
 
     def update_section_layout_from_course(self, course):
 
-        for child in self.section_layout.children:
-            self.section_layout.remove_widget(child)
+        self.pop_up.curr_course = course
+
+        for child in self.pop_up.section_layout.children:
+            self.pop_up.section_layout.remove_widget(child)
 
         grid_layout = GridLayout(
             cols=len(course.activity_dict.keys()),
@@ -145,7 +147,6 @@ class CourseInput(TextInput):
                     size_hint=(None, None),
                     height=30,
                     pos_hint={'center_x': .5, 'center_y': .5},
-                    # height=100,
                     spacing=15,
                     padding=10
                 )
@@ -162,7 +163,7 @@ class CourseInput(TextInput):
             scroll_view.add_widget(activity_layout)
             grid_layout.add_widget(scroll_view)
 
-        self.section_layout.add_widget(grid_layout)
+        self.pop_up.section_layout.add_widget(grid_layout)
 
     def update_drop_down(self, *args):
         self.drop_down.dismiss()
@@ -176,7 +177,7 @@ class PopupCloseButton(Button):
     def __init__(self, pop_up):
 
         super().__init__(
-            text="Close popup",
+            text="Close",
             size_hint=(.6, None),
             size=(100, 44),
             pos_hint={'center_x': .5, 'center_y': .5}
@@ -186,3 +187,10 @@ class PopupCloseButton(Button):
 
     def on_press(self):
         self.pop_up.dismiss()
+        print(self.pop_up.curr_course)
+        if self.pop_up.curr_course:
+            self.pop_up.selector_button.text = "{} {} - {}".format(
+                self.pop_up.curr_course.subject_id,
+                self.pop_up.curr_course.id,
+                "title"
+            )
