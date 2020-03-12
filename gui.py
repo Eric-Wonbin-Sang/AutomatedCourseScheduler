@@ -50,9 +50,7 @@ class MyApp(App):
 
     def get_selector_layout(self):
         selector_layout = SelectorLayout()
-
         selector_layout.add_widget(Selector.Selector(selector_layout, stevens=self.stevens))
-
         return selector_layout
 
 

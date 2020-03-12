@@ -6,14 +6,16 @@ from kivy.uix.checkbox import CheckBox
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
+from kivy.uix.scrollview import ScrollView
 
-from GUIElements import Buttons
+from Stevens import Section
 
 
 class SelectorPopup(Popup):
 
-    def __init__(self, stevens):
+    def __init__(self, selector_button, stevens):
 
+        self.selector_button = selector_button
         self.stevens = stevens
         self.popup_layout = BoxLayout(
             orientation='vertical',
@@ -33,7 +35,7 @@ class SelectorPopup(Popup):
 
         self.popup_layout.add_widget(CourseInput(self.section_layout, self.stevens))
         self.popup_layout.add_widget(self.section_layout)
-        self.popup_layout.add_widget(Buttons.PopupCloseButton(self))
+        self.popup_layout.add_widget(PopupCloseButton(self))
 
         super().__init__(
             title="Section Selector",
@@ -62,6 +64,7 @@ class CourseInput(TextInput):
         self.course_list, self.option_list = self.get_option_list()
         self.drop_down = self.get_drop_down()
         self.bind(text=self.update_drop_down)
+        self.bind(on_text_validate=self.auto_complete)
 
     def get_option_list(self):
         option_list = []
@@ -77,63 +80,109 @@ class CourseInput(TextInput):
         drop_down = DropDown()
         if len(self.text) > 0:
             for option in self.option_list:
-                if self.text.lower() in option.lower():
+                if self.text.lower().replace(" ", "") in option.lower().replace(" ", ""):
                     button = Button(
                         text=option,
-                        size_hint_y=None, height=40
+                        size_hint_y=None, height=30
                     )
                     button.bind(on_release=lambda btn: drop_down.select(btn.text))
                     drop_down.add_widget(button)
             drop_down.bind(on_select=lambda instance, x: self.update_section_layout(x))
         return drop_down
 
+    def auto_complete(self, *args):
+        for i, option in enumerate(self.option_list):
+            if self.text.lower().replace(" ", "") in option.lower().replace(" ", ""):
+                self.text = option
+                self.drop_down.dismiss()
+                self.update_section_layout_from_course(self.course_list[i])
+                break
+
+    def get_curr_course(self):
+        for i, option in enumerate(self.option_list):
+            if option == self.text:
+                return self.course_list[i]
+        return None
+
     def update_section_layout(self, text):
         self.text = text
         self.drop_down.dismiss()
+        self.update_section_layout_from_course(self.get_curr_course())
+
+    def update_section_layout_from_course(self, course):
 
         for child in self.section_layout.children:
             self.section_layout.remove_widget(child)
 
-        course = None
-        for i, option in enumerate(self.option_list):
-            if option == self.text:
-                course = self.course_list[i]
-                break
-
         grid_layout = GridLayout(
             cols=len(course.activity_dict.keys()),
-            # size_hint=(1, .2),
-            pos_hint={'center_x': .5, 'center_y': .5},
-            # spacing=15,
-            # padding=10
+            pos_hint={'center_x': .5, 'center_y': .5}
         )
 
         for activity_key in course.activity_dict:
-            grid_layout.add_widget(Label(text=activity_key))
+            grid_layout.add_widget(
+                Label(
+                    text=Section.Section.activity_dict[activity_key],
+                    size_hint=(1, .1),
+                    pos_hint={'center_x': .5, 'center_y': .5}
+                )
+            )
 
         for activity_key in course.activity_dict:
 
-            activity_layout = BoxLayout(orientation="vertical")
+            activity_layout = BoxLayout(
+                orientation="vertical",
+                padding=10,
+                spacing=10,
+                size_hint=(1, None),
+                pos_hint={'center_x': .5, 'center_y': .5}
+            )
+            activity_layout.bind(minimum_height=activity_layout.setter('height'))
 
             for i, section in enumerate(course.activity_dict[activity_key]):
                 choice_layout = BoxLayout(
                     orientation='horizontal',
-                    # size_hint=(1, .2),
+                    size_hint=(None, None),
+                    height=30,
                     pos_hint={'center_x': .5, 'center_y': .5},
-                    # spacing=15,
-                    # padding=10
+                    # height=100,
+                    spacing=15,
+                    padding=10
                 )
+
                 choice_layout.add_widget(Label(text=section.id))
                 choice_layout.add_widget(CheckBox(active=True if i == 0 else False))
                 activity_layout.add_widget(choice_layout)
 
-            grid_layout.add_widget(activity_layout)
+            scroll_view = ScrollView(
+                size_hint=(1, 1),
+                pos_hint={'center_x': .5, 'center_y': .5},
+                do_scroll_x=False,
+            )
+            scroll_view.add_widget(activity_layout)
+            grid_layout.add_widget(scroll_view)
 
         self.section_layout.add_widget(grid_layout)
 
     def update_drop_down(self, *args):
-        print("CHANGED -", self.text)
         self.drop_down.dismiss()
         self.drop_down = self.get_drop_down()
         if self.text != "":
             self.drop_down.open(self)
+
+
+class PopupCloseButton(Button):
+
+    def __init__(self, pop_up):
+
+        super().__init__(
+            text="Close popup",
+            size_hint=(.6, None),
+            size=(100, 44),
+            pos_hint={'center_x': .5, 'center_y': .5}
+        )
+
+        self.pop_up = pop_up
+
+    def on_press(self):
+        self.pop_up.dismiss()

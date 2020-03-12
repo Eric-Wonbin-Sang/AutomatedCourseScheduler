@@ -13,7 +13,7 @@ class AddSelectorButton(Button):
 
         super().__init__(
             text="+",
-            size_hint=(.1, None),
+            size_hint=(.2, None),
             size=(100, 44),
             pos_hint={'center_x': .5, 'center_y': .5}
         )
@@ -45,36 +45,19 @@ class RemoveSelectorButton(Button):
             self.selector_layout.remove_widget(self.selector)
 
 
-class PopupCloseButton(Button):
-
-    def __init__(self, pop_up):
-
-        super().__init__(
-            text="Close popup",
-            size_hint=(.6, None),
-            size=(100, 44),
-            pos_hint={'center_x': .5, 'center_y': .5}
-        )
-
-        self.pop_up = pop_up
-
-    def on_press(self):
-        self.pop_up.dismiss()
-
-
 class SelectorButton(Button):
 
     def __init__(self, stevens):
 
         super().__init__(
-            text="Selector Button",
+            text="No Course Selected",
             size_hint=(.4, None),
             size=(100, 44),
             pos_hint={'center_x': .5, 'center_y': .5}
         )
 
         self.stevens = stevens
-        self.selector_popup = SelectorPopup(self.stevens)
+        self.selector_popup = SelectorPopup(selector_button=self, stevens=self.stevens)
 
     def on_press(self):
         self.selector_popup.open()
@@ -86,7 +69,7 @@ class StartButton(Button):
 
         super().__init__(
             text="Start Schedule Creation",
-            size_hint=(.6, .1),
+            size_hint=(.6, None),
             size=(100, 44),
             pos_hint={'center_x': .5, 'center_y': .5}
         )
@@ -107,13 +90,13 @@ class StartButton(Button):
         print("-----------------")
 
 
-class ImageButton(ButtonBehavior, Image):
-
-    def __init__(self, image_path, sound_path):
-        super(ImageButton, self).__init__(source=image_path, allow_stretch=True)
-
-        self.image_path = image_path
-        self.sound_path = sound_path
-
-    def on_press(self):
-        SoundLoader.load(self.sound_path).play()
+# class ImageButton(ButtonBehavior, Image):
+#
+#     def __init__(self, image_path, sound_path):
+#         super(ImageButton, self).__init__(source=image_path, allow_stretch=True)
+#
+#         self.image_path = image_path
+#         self.sound_path = sound_path
+#
+#     def on_press(self):
+#         SoundLoader.load(self.sound_path).play()

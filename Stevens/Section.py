@@ -6,14 +6,14 @@ from General import Constants, Functions
 class Section:
 
     activity_dict = {
-        "LEC": "lecture",
-        "PRA": "",
-        "QUZ": "quiz",
-        "L/L": "",
-        "RCT": "recitation",
-        "SEM": "seminar",
-        "LAB": "lab",
-        "None": ""
+        "LEC": "Lecture",
+        "PRA": "Practice",
+        "QUZ": "Quiz",
+        "L/L": "Lecture / Lab",
+        "RCT": "Recitation",
+        "SEM": "Seminar",
+        "LAB": "Lab",
+        "None": "None"
     }
 
     def __init__(self, parent_course, xml):
