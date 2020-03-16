@@ -3,15 +3,17 @@ from General import Functions
 
 class Subject:
 
-    def __init__(self, course_list):
+    def __init__(self, parent_term, course_list):
 
+        self.parent_term = parent_term
         self.id = course_list[0].subject_id
 
         self.course_list = course_list
+        self.update_course_parents()
 
     def update_course_parents(self):
         for course in self.course_list:
-            course.subject_parent = self
+            course.parent_subject = self
 
     def __str__(self, **kwargs):
         ret_str = "Subject ID: {}, course count: {}".format(self.id, len(self.course_list))

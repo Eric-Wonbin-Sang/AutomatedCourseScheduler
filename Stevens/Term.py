@@ -40,7 +40,7 @@ class Term:
             else:
                 subject_id_to_course_list_dict[course.subject_id] += [course]
 
-        return [Subject.Subject(subject_id_to_course_list_dict[subject_id])
+        return [Subject.Subject(parent_term=self, course_list=subject_id_to_course_list_dict[subject_id])
                 for subject_id in subject_id_to_course_list_dict]
 
     def __str__(self, **kwargs):

@@ -1,6 +1,8 @@
 from kivy.graphics.context_instructions import Color
 from kivy.graphics.vertex_instructions import Rectangle
 
+from General import Functions
+
 
 def make_layout(layout_class):
 
@@ -10,12 +12,7 @@ def make_layout(layout_class):
 
             self.background_color = kwargs.get("background_color")
 
-            new_kwargs = {}
-            for key in kwargs:
-                if key != "background_color":
-                    new_kwargs[key] = kwargs[key]
-
-            super().__init__(*args, **new_kwargs)
+            super().__init__(*args, **Functions.remove_from_dict(kwargs, "background_color"))
 
             if self.background_color:
                 with self.canvas.before:

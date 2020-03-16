@@ -10,11 +10,13 @@ class Course:
         self.parent_subject = parent_subject
 
         self.section_list = section_list
+        self.update_section_parents()
+
         self.activity_dict = self.get_activity_dict()
 
     def update_section_parents(self):
         for section in self.section_list:
-            section.course_parent = self
+            section.parent_course = self
 
     def get_activity_dict(self):
         activity_dict = {}

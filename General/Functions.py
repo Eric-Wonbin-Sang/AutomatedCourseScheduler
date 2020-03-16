@@ -84,6 +84,14 @@ def tab_string(data_str):
     return "\t" + data_str.replace("\n", "\n\t")
 
 
+def remove_from_dict(data_dict, *keys):
+    ret_dict = {}
+    for key in data_dict:
+        if key not in keys:
+            ret_dict[key] = data_dict[key]
+    return ret_dict
+
+
 # GUI funcs ---------------------------------------------------------------------
 
 def clear_layout(layout):

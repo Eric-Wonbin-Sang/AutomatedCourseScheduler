@@ -7,16 +7,17 @@ class Schedule:
 
         self.section_list = section_list
         self.credit_sum = self.section_list_to_credit_count()
-        # self.url = self.get_url(term.code)
+        self.url = self.get_url()
 
     def section_list_to_credit_count(self):
         return sum([int(x.max_credit) for x in self.section_list])
 
-    def get_url(self, term_key):
+    def get_url(self):
+        term_key = self.section_list[0].parent_course.parent_subject.parent_term.id
         return "http://sitscheduler.com/#" + term_key + "=" + ",".join([x.call_number for x in self.section_list])
 
     def __str__(self):
-        return "{}, {}".format(len(self.section_list), [section.section for section in self.section_list])
+        return "Credits: {} \tURL: {}".format(self.credit_sum, self.url)
 
 
 def get_schedule_list(section_list_list):

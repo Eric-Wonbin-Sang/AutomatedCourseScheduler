@@ -3,18 +3,18 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.core.window import Window
 from kivy.uix.button import Button
 from kivy.uix.image import Image
-from kivy.uix.pagelayout import PageLayout
+from kivy.uix.screenmanager import ScreenManager
 
 from Stevens import Stevens
 import ScheduleCreator
 
-from GUIElements import SelectorGroup, SelectorLayout, LayoutFactory
+from GUIElements import SelectorGroup, SelectorLayout, LayoutFactory, AppScreen
 from General import Functions, Constants
 
 
 class PageOne(LayoutFactory.make_layout(BoxLayout)):
 
-    def __init__(self, stevens):
+    def __init__(self, acs_app, stevens):
 
         super().__init__(
             orientation="vertical",
@@ -24,12 +24,13 @@ class PageOne(LayoutFactory.make_layout(BoxLayout)):
             background_color=(255, 255, 255)
         )
 
+        self.acs_app = acs_app
         self.stevens = stevens
         self.banner_image_path = "Images/stevens_logo.jpg"
 
         self.banner_image = self.get_banner_image()
         self.selector_group = self.get_selector_group()
-        self.start_button = StartButton(stevens=self.stevens, selector_group=self.selector_group)
+        self.start_button = StartButton(acs_app=self.acs_app, stevens=self.stevens, selector_group=self.selector_group)
 
         self.add_components()
 
@@ -60,7 +61,7 @@ class PageOne(LayoutFactory.make_layout(BoxLayout)):
 
 class PageTwo(LayoutFactory.make_layout(BoxLayout)):
 
-    def __init__(self, stevens):
+    def __init__(self, acs_app, stevens):
 
         super().__init__(
             orientation="vertical",
@@ -71,6 +72,7 @@ class PageTwo(LayoutFactory.make_layout(BoxLayout)):
             pos_hint={'center_x': .5, 'center_y': .5}
         )
 
+        self.acs_app = acs_app
         self.stevens = stevens
         self.loading_image_path = "Images/loading.gif"
         self.loading_image = self.get_loading_image()
@@ -115,7 +117,7 @@ class AddSelectorButton(Button):
 
 class StartButton(Button):
 
-    def __init__(self, stevens, selector_group):
+    def __init__(self, acs_app, stevens, selector_group):
 
         super().__init__(
             text="Start Schedule Creation",
@@ -124,6 +126,7 @@ class StartButton(Button):
             pos_hint={'center_x': .5, 'center_y': .5}
         )
 
+        self.acs_app = acs_app
         self.stevens = stevens
         self.selector_group = selector_group
 
@@ -135,35 +138,35 @@ class StartButton(Button):
         schedule_list = ScheduleCreator.get_schedule_list(section_list_list=section_list_list)
 
         for schedule in schedule_list:
-            print(schedule.get_url(self.stevens.term_key))
+            print(schedule)
         print("------------------")
 
+        self.acs_app.screen_manager.current = "two"
 
-class MyApp(App):
+
+class ACSApp(App):
 
     def __init__(self):
 
         super().__init__()
 
         self.stevens = Stevens.Stevens(term_key="2020S")
-        self.page_layout = PageLayout(
-            size_hint=(1, 1),
-            pos_hint={'center_x': .5, 'center_y': .5}
-        )
 
-        self.page_one = PageOne(stevens=self.stevens)
-        self.page_two = PageTwo(stevens=self.stevens)
+        self.screen_manager = ScreenManager()
+
+        self.screen_one = AppScreen.AppScreen(name="one", child_widget=PageOne(acs_app=self, stevens=self.stevens))
+        self.screen_two = AppScreen.AppScreen(name="two", child_widget=PageTwo(acs_app=self, stevens=self.stevens))
 
     def build(self):
 
-        # return Functions.add_to_layout(
-        #     self.page_layout,
-        #     self.page_one,
-        #     self.page_two,
-        # )
+        Functions.add_to_layout(
+            self.screen_manager,
+            self.screen_one,
+            self.screen_two
+        )
 
-        return self.page_one
+        return self.screen_manager
 
 
 Window.size = (400, 700)
-MyApp().run()
+ACSApp().run()
