@@ -27,24 +27,33 @@ class SelectorLayout(BoxLayout):
         self.add_widget(self.selector_button)
         self.add_widget(self.remove_button)
 
-    def get_section_list(self):
+    def get_section_list_list(self):
 
-        section_id_list = []
+        section_id_list_list = []
         for grid_layout in self.selector_button.selector_popup.section_layout.children:
             for i in range(int(len(grid_layout.children)/2)):
                 scroll_view = grid_layout.children[i]
                 for box_layout in scroll_view.children:
-                    for section_layout in box_layout.children:
-                        checkbox, label = section_layout.children
-                        if checkbox.state == "down":
-                            section_id_list.append(label.text)
+                    all_choice_layout = box_layout.children[-1]
+                    choice_layout_list = box_layout.children[:-1]
+                    if all_choice_layout.is_selected():
+                        section_id_list_list.append([choice_layout.get_text() for choice_layout in choice_layout_list])
+                    else:
+                        section_id_list = []
+                        for choice_layout in choice_layout_list:
+                            if choice_layout.is_selected():
+                                section_id_list.append(choice_layout.get_text())
+                        section_id_list_list.append(section_id_list)
 
-        section_list = []
+        section_list_list = []
         if self.selector_button.selector_popup.curr_course:
-            for section in self.selector_button.selector_popup.curr_course.section_list:
-                if section.id in section_id_list:
-                    section_list.append(section)
-        return section_list
+            for section_id_list in section_id_list_list:
+                section_list = []
+                for section in self.selector_button.selector_popup.curr_course.section_list:
+                    if section.id in section_id_list:
+                        section_list.append(section)
+                section_list_list.append(section_list)
+        return section_list_list
 
 
 class RemoveSelectorButton(Button):

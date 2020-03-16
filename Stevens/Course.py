@@ -25,6 +25,9 @@ class Course:
                 activity_dict[section.activity] += [section]
         return activity_dict
 
+    def get_name(self):
+        return "{} {} - {}".format(self.subject_id, self.id, self.section_list[0].title)
+
     def __str__(self, **kwargs):
         ret_str = "Course ID: {}, section count: {}".format(self.id, len(self.section_list))
         if kwargs.get("print_section_list"):

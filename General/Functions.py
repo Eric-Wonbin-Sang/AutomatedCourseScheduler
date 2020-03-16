@@ -14,13 +14,6 @@ def string_to_length(some_str, length, flush="left", dots=False):
     return new_str
 
 
-# def attrib_list_to_dict(attrib_list):
-#     d = {}
-#     for some_attrib in attrib_list:
-#         d[some_attrib] = attrib_list[some_attrib]
-#     return d
-
-
 def string_to_alternating_letter_to_num(some_string):
     some_string = some_string.replace(" ", "")
     ret_list = []
@@ -58,7 +51,11 @@ def clean_dict(data_dict):
     return new_dict
 
 
-# ---------------------------------------------------------------------
+def is_connected():
+    return False
+
+
+# Dict funcs ---------------------------------------------------------------------
 
 
 def find_first_occurrence_in_dicts(key, *dict_list):
@@ -79,6 +76,19 @@ def remove_empty_values(data_dict):
 def tab_string(data_str):
     return "\t" + data_str.replace("\n", "\n\t")
 
+
+# GUI funcs ---------------------------------------------------------------------
+
+def clear_layout(layout):
+    for child in layout.children:
+        layout.remove_widget(child)
+    return layout
+
+
+def add_to_layout(layout, *widget_list):
+    for widget in widget_list:
+        layout.add_widget(widget)
+    return layout
 
 # ---------------------------------------------------------------------
 

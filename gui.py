@@ -3,10 +3,90 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.core.window import Window
 from kivy.uix.button import Button
 from kivy.uix.image import Image
+from kivy.uix.pagelayout import PageLayout
 
 from Stevens import Stevens
 
 from GUIElements import SelectorGroup, SelectorLayout, LayoutFactory
+from General import Functions, Constants
+
+
+class PageOne(LayoutFactory.make_layout(BoxLayout)):
+
+    def __init__(self, stevens):
+
+        super().__init__(
+            orientation="vertical",
+            spacing=15,
+            padding=10,
+            size_hint=(1, 1),
+            background_color=(255, 255, 255)
+        )
+
+        self.stevens = stevens
+        self.banner_image_path = "Images/stevens_logo.jpg"
+
+        self.banner_image = self.get_banner_image()
+        self.selector_group = self.get_selector_group()
+        self.start_button = StartButton(stevens=self.stevens, selector_group=self.selector_group)
+
+        self.add_components()
+
+    def get_banner_image(self):
+        return Image(
+            source=self.banner_image_path,
+            size_hint=(1, None)
+        )
+
+    def get_selector_group(self):
+        selector_group = SelectorGroup.SelectorGroup()
+        for i in range(Constants.selection_start_count):
+            selector_group.add_widget(
+                SelectorLayout.SelectorLayout(selector_group=selector_group, stevens=self.stevens)
+            )
+        return selector_group
+
+    def add_components(self):
+        Functions.add_to_layout(
+            self,
+            self.banner_image,
+            Functions.add_to_layout(
+                self.selector_group,
+                AddSelectorButton(stevens=self.stevens, selector_group=self.selector_group)),
+            self.start_button
+        )
+
+
+class PageTwo(LayoutFactory.make_layout(BoxLayout)):
+
+    def __init__(self, stevens):
+
+        super().__init__(
+            orientation="vertical",
+            spacing=15,
+            padding=10,
+            size_hint=(1, 1),
+            background_color=(255, 255, 255),
+            pos_hint={'center_x': .5, 'center_y': .5}
+        )
+
+        self.stevens = stevens
+        self.loading_image_path = "Images/loading.gif"
+        self.loading_image = self.get_loading_image()
+
+        self.add_components()
+
+    def get_loading_image(self):
+        return Image(
+            source=self.loading_image_path,
+            size_hint=(1, None)
+        )
+
+    def add_components(self):
+        Functions.add_to_layout(
+            self,
+            self.loading_image
+        )
 
 
 class AddSelectorButton(Button):
@@ -25,10 +105,11 @@ class AddSelectorButton(Button):
 
     def on_press(self):
         self.selector_group.remove_widget(self)
-        self.selector_group.add_widget(
-            SelectorLayout.SelectorLayout(selector_group=self.selector_group, stevens=self.stevens)
+        Functions.add_to_layout(
+            self.selector_group,
+            SelectorLayout.SelectorLayout(selector_group=self.selector_group, stevens=self.stevens),
+            self
         )
-        self.selector_group.add_widget(self)
 
 
 class StartButton(Button):
@@ -46,14 +127,14 @@ class StartButton(Button):
         self.selector_group = selector_group
 
     def on_press(self):
-        section_list = []
+        section_list_list = []
         for selector_layout in self.selector_group.children[1:]:
-            section_list += selector_layout.get_section_list()
+            section_list_list += selector_layout.get_section_list_list()
 
-        for section in section_list:
-            print("{}".format(section.section))
-            print("{}".format(section.__str__(print_section_dicts=True)))
+        for section_list in section_list_list:
+            print([section.section for section in section_list])
         print("------------------")
+
 
 class MyApp(App):
 
@@ -62,40 +143,23 @@ class MyApp(App):
         super().__init__()
 
         self.stevens = Stevens.Stevens(term_key="2020S")
-        self.selector_group = self.get_selector_group()
+        self.page_layout = PageLayout(
+            size_hint=(1, 1),
+            pos_hint={'center_x': .5, 'center_y': .5}
+        )
+
+        self.page_one = PageOne(stevens=self.stevens)
+        self.page_two = PageTwo(stevens=self.stevens)
 
     def build(self):
 
-        gui_layout = LayoutFactory.make_layout(BoxLayout)(
-            orientation="vertical",
-            spacing=15,
-            padding=10,
-            background_color=(255, 255, 255)
-        )
+        # return Functions.add_to_layout(
+        #     self.page_layout,
+        #     self.page_one,
+        #     self.page_two,
+        # )
 
-        gui_layout.add_widget(
-            Image(
-                source="Images/stevens_logo.jpg",
-                size_hint=(1, None)
-            )
-        )
-        gui_layout.add_widget(self.selector_group)
-        self.selector_group.add_widget(
-            AddSelectorButton(stevens=self.stevens, selector_group=self.selector_group)
-        )
-        gui_layout.add_widget(
-            StartButton(stevens=self.stevens, selector_group=self.selector_group)
-        )
-
-        return gui_layout
-
-    def get_selector_group(self):
-        selector_group = SelectorGroup.SelectorGroup()
-        for i in range(5):
-            selector_group.add_widget(
-                SelectorLayout.SelectorLayout(selector_group, stevens=self.stevens)
-            )
-        return selector_group
+        return self.page_one
 
 
 Window.size = (400, 700)

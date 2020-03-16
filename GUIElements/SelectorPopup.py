@@ -10,6 +10,8 @@ from kivy.uix.scrollview import ScrollView
 
 from Stevens import Section
 
+from General import Functions, Constants
+
 
 class SelectorPopup(Popup):
 
@@ -18,8 +20,8 @@ class SelectorPopup(Popup):
         self.selector_button = selector_button
         self.stevens = stevens
 
+        self.curr_course = self.get_init_course()
         self.popup_layout, self.section_layout = self.get_layouts()
-        self.curr_course = None
 
         super().__init__(
             title="Section Selector",
@@ -28,6 +30,9 @@ class SelectorPopup(Popup):
             auto_dismiss=False
         )
 
+    def get_init_course(self):
+        return self.stevens.get_rand_course() if Constants.do_rand_course else None
+
     def get_layouts(self):
         popup_layout = BoxLayout(
             orientation='vertical',
@@ -35,7 +40,6 @@ class SelectorPopup(Popup):
             spacing=15,
             padding=10
         )
-        popup_layout.add_widget(CourseInput(self, self.stevens))
 
         section_layout = BoxLayout(
             orientation='vertical',
@@ -43,19 +47,24 @@ class SelectorPopup(Popup):
             padding=10
         )
 
-        popup_layout.add_widget(section_layout)
-        popup_layout.add_widget(PopupCloseButton(pop_up=self))
+        popup_layout.add_widget(CourseInput(pop_up=self, section_layout=section_layout))
+
+        Functions.add_to_layout(popup_layout, section_layout, PopupCloseButton(pop_up=self))
         return popup_layout, section_layout
 
 
 class CourseInput(TextInput):
 
-    def __init__(self, pop_up, stevens):
+    def __init__(self, pop_up, section_layout):
 
         self.pop_up = pop_up
-        self.stevens = stevens
+        self.section_layout = section_layout
+        self.stevens = self.pop_up.stevens
+
+        self.init_text = self.get_init_text()
 
         super().__init__(
+            text=self.init_text,
             size_hint=(1, .1),
             pos_hint={'center_x': .5, 'center_y': .5},
             multiline=False
@@ -66,14 +75,18 @@ class CourseInput(TextInput):
         self.bind(text=self.update_drop_down)
         self.bind(on_text_validate=self.auto_complete)
 
+    def get_init_text(self):
+        if self.pop_up.curr_course:
+            self.update_section_layout_from_course(self.pop_up.curr_course)
+            return self.pop_up.curr_course.get_name()
+        return ""
+
     def get_option_list(self):
-        option_list = []
-        course_list = []
+        option_list, course_list = [], []
         for subject in self.stevens.term.subject_list:
             for course in subject.course_list:
                 course_list.append(course)
-                button_text = "{} {} - {}".format(course.subject_id, course.id, course.section_list[0].title)
-                option_list.append(button_text)
+                option_list.append(course.get_name())
         return course_list, option_list
 
     def get_drop_down(self):
@@ -113,9 +126,9 @@ class CourseInput(TextInput):
     def update_section_layout_from_course(self, course):
 
         self.pop_up.curr_course = course
+        self.pop_up.selector_button.text = course.get_name()
 
-        for child in self.pop_up.section_layout.children:
-            self.pop_up.section_layout.remove_widget(child)
+        Functions.clear_layout(self.section_layout)
 
         grid_layout = GridLayout(
             cols=len(course.activity_dict.keys()),
@@ -141,19 +154,9 @@ class CourseInput(TextInput):
             )
             activity_layout.bind(minimum_height=activity_layout.setter('height'))
 
-            for i, section in enumerate(course.activity_dict[activity_key]):
-                choice_layout = BoxLayout(
-                    orientation='horizontal',
-                    size_hint=(None, None),
-                    height=30,
-                    pos_hint={'center_x': .5, 'center_y': .5},
-                    spacing=15,
-                    padding=10
-                )
-
-                choice_layout.add_widget(Label(text=section.id))
-                choice_layout.add_widget(CheckBox(active=True if i == 0 else False))
-                activity_layout.add_widget(choice_layout)
+            activity_layout.add_widget(ChoiceLayout(label_text="All", check_box_status=True))
+            for section in course.activity_dict[activity_key]:
+                activity_layout.add_widget(ChoiceLayout(label_text=section.id, check_box_status=False))
 
             scroll_view = ScrollView(
                 size_hint=(1, 1),
@@ -163,13 +166,50 @@ class CourseInput(TextInput):
             scroll_view.add_widget(activity_layout)
             grid_layout.add_widget(scroll_view)
 
-        self.pop_up.section_layout.add_widget(grid_layout)
+        self.section_layout.add_widget(grid_layout)
 
     def update_drop_down(self, *args):
         self.drop_down.dismiss()
         self.drop_down = self.get_drop_down()
-        if self.text != "":
+        if self.text != self.init_text:
             self.drop_down.open(self)
+
+
+class ChoiceLayout(BoxLayout):
+
+    def __init__(self, label_text, check_box_status):
+
+        super().__init__(
+            orientation='horizontal',
+            size_hint=(None, None),
+            height=30,
+            pos_hint={'center_x': .5, 'center_y': .5},
+            spacing=15,
+            padding=10
+        )
+
+        self.label = Label(text=label_text)
+        self.check_box = CheckBox(active=check_box_status)
+
+        self.add_components()
+
+    def add_components(self):
+        self.add_widget(self.label)
+        self.add_widget(self.check_box)
+
+    def get_text(self):
+        return self.label.text if self.label else "No label"
+
+    def is_selected(self):
+        return self.check_box.state == "down"
+
+    def __str__(self):
+        if self.__dict__.get("label") and self.__dict__.get("check_box"):
+            ret_str = "ChoiceLayout: "
+            ret_str += "Label: {}\t\t".format(self.get_text())
+            ret_str += "CheckBox: {}".format(self.is_selected())
+            return ret_str
+        return super().__str__()
 
 
 class PopupCloseButton(Button):
@@ -187,9 +227,3 @@ class PopupCloseButton(Button):
 
     def on_press(self):
         self.pop_up.dismiss()
-        if self.pop_up.curr_course:
-            self.pop_up.selector_button.text = "{} {} - {}".format(
-                self.pop_up.curr_course.subject_id,
-                self.pop_up.curr_course.id,
-                self.pop_up.curr_course.section_list[0].title
-            )

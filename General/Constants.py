@@ -6,3 +6,5 @@ term_url_dict = {
 }
 
 minimum_section_start = 8
+selection_start_count = 5
+do_rand_course = True

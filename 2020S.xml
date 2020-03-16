@@ -3,8 +3,8 @@
 <!--Last update: 4-Nov-2008 20:28-->
 <!--Original Author: Peter Garafano-->
 <!--This data is solely for the use of Stevens Institute of Technology, its students and faculty.-->
-<!--File created: Thu Mar 12 00:40:21 2020-->
-<!--The xml file was 1222 seconds old.-->
+<!--File created: Fri Mar 13 12:22:41 2020-->
+<!--The xml file was 176 seconds old.-->
 <!--Courses parsed: 2203-->
 <!--Meetings parsed: 2238-->
 <!--Requirements parsed: 2769-->
@@ -1487,7 +1487,7 @@
 		<Requirement Control="RQ" Argument="" Value1="CH  243" Operator="" Value2=""/>
 		<Requirement Control="CA" Argument="" Value1="RCT" Operator="" Value2=""/>
 	</Course>
-	<Course Section="CH 244RA" Title="Organic Chemistry II" CallNumber="10324" MinCredit="0" MaxCredit="0" MaxEnrollment="30" CurrentEnrollment="36" Status="C" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="Sharma A" Term="2020S">
+	<Course Section="CH 244RA" Title="Organic Chemistry II" CallNumber="10324" MinCredit="0" MaxCredit="0" MaxEnrollment="30" CurrentEnrollment="35" Status="C" StartDate="2020-01-21Z" EndDate="2020-05-18Z" Instructor1="Sharma A" Term="2020S">
 		<Meeting Day="W" StartTime="5:00:00Z" EndTime="5:50:00Z" Site="Castle Point" Building="X" Room="414" Activity="RCT"/>
 		<Requirement Control="NQ" Argument="" Value1="CH  245" Operator="" Value2=""/>
 		<Requirement Control="RQ" Argument="" Value1="CH  243" Operator="" Value2=""/>
@@ -4862,7 +4862,7 @@
 		<Requirement Control="R&amp;" Argument="" Value1="MGT 623" Operator="" Value2="FIN 623"/>
 		<Requirement Control="RQ" Argument="" Value1="EMT 623" Operator="" Value2=""/>
 	</Course>
-	<Course Section="FIN 638MX2" Title="Corporate Finance" CallNumber="12168" MinCredit="3" MaxCredit="3" MaxEnrollment="35" CurrentEnrollment="12" Status="O" StartDate="2020-03-23Z" EndDate="2020-05-07Z" Instructor1="STAFF" Term="2020S">
+	<Course Section="FIN 638MX2" Title="Corporate Finance" CallNumber="12168" MinCredit="3" MaxCredit="3" MaxEnrollment="35" CurrentEnrollment="12" Status="O" StartDate="2020-03-23Z" EndDate="2020-05-07Z" Instructor1="Banerjee S" Term="2020S">
 		<Meeting Day="T" StartTime="11:30:00Z" EndTime="14:00:00Z" Site="Castle Point" Building="BC" Room="203" Activity="LEC"/>
 		<Meeting Day="T" StartTime="5:30:00Z" EndTime="8:00:00Z" Site="Castle Point" Building="BC" Room="203" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="MGT 600" Operator="" Value2="FIN 600"/>
