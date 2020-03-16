@@ -55,6 +55,13 @@ def is_connected():
     return False
 
 
+def multiply_list(data_list):
+    ret_int = 1
+    for data in data_list:
+        ret_int *= data
+    return ret_int
+
+
 # Dict funcs ---------------------------------------------------------------------
 
 

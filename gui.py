@@ -6,6 +6,7 @@ from kivy.uix.image import Image
 from kivy.uix.pagelayout import PageLayout
 
 from Stevens import Stevens
+import ScheduleCreator
 
 from GUIElements import SelectorGroup, SelectorLayout, LayoutFactory
 from General import Functions, Constants
@@ -131,8 +132,10 @@ class StartButton(Button):
         for selector_layout in self.selector_group.children[1:]:
             section_list_list += selector_layout.get_section_list_list()
 
-        for section_list in section_list_list:
-            print([section.section for section in section_list])
+        schedule_list = ScheduleCreator.get_schedule_list(section_list_list=section_list_list)
+
+        for schedule in schedule_list:
+            print(schedule.get_url(self.stevens.term_key))
         print("------------------")
 
 

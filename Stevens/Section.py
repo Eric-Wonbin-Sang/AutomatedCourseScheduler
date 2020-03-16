@@ -72,7 +72,7 @@ class Section:
 
         if type(start_time) == str and type(end_time) == str:
             split_start_time = str(start_time).split(":")
-            split_end_time = str(start_time).split(":")
+            split_end_time = str(end_time).split(":")
 
             start_time = [int(split_start_time[0]), int(split_start_time[1])]
             end_time = [int(split_end_time[0]), int(split_end_time[1])]
@@ -101,31 +101,3 @@ class Section:
                 ret_str += "\n" + Functions.dict_to_string(requirement_dict, "requirement_dict: count = " + str(i))
             return header + "\n" + Functions.tab_string(ret_str)
         return header
-
-
-# def is_section_list_valid(section_list):
-#     # returns True if section_list has no conflicts
-#
-#     for i, section in enumerate(section_list):
-#         check_section_list = section_list[:i] + section_list[i + 1:]
-#         for day_key in section.time_dict:
-#             for check_section in check_section_list:
-#                 if day_key in check_section.time_dict:
-#                     if has_overlap(start1=section.time_dict[day_key][0],
-#                                    end1=section.time_dict[day_key][1],
-#                                    start2=check_section.time_dict[day_key][0],
-#                                    end2=check_section.time_dict[day_key][1]):
-#                         return False
-#     return True
-#
-#
-# def iter_list_to_section_list(iter_list, section_list_list):
-#     new_section_list = []
-#     for i, section_list in enumerate(section_list_list):
-#         new_section_list.append(section_list[iter_list[i]])
-#     return new_section_list
-#
-#
-# def has_overlap(start1, end1, start2, end2):
-#     # startA is before stopB and stopA is after StartB
-#     return not (end1 < start2 or start1 > end2)

@@ -25,15 +25,3 @@ class MultiBaseNumber:
                 ret_str += ", "
             ret_str += "{}: {}".format(self.base_list[i], self.value_list[i])
         return ret_str + "]"
-
-
-def main():
-
-    multi_base_number = MultiBaseNumber(base_list=[3])
-
-    for i in range(20):
-        print(multi_base_number)
-        multi_base_number.iterate()
-
-
-main()
