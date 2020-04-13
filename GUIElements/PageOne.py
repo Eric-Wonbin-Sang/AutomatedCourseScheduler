@@ -1,14 +1,10 @@
-from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
-from kivy.core.window import Window
 from kivy.uix.button import Button
 from kivy.uix.image import Image
-from kivy.uix.screenmanager import ScreenManager
 
-from Stevens import Stevens
 from ScheduleFiles import ScheduleCreator, ScheduleTests
 
-from GUIElements import SelectorGroup, SelectorLayout, LayoutFactory, AppScreen
+from GUIElements import SelectorGroup, SelectorLayout, LayoutFactory
 from General import Functions, Constants
 
 

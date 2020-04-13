@@ -1,15 +1,8 @@
-from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
-from kivy.core.window import Window
-from kivy.uix.button import Button
 from kivy.uix.image import Image
-from kivy.uix.screenmanager import ScreenManager
 
-from Stevens import Stevens
-from ScheduleFiles import ScheduleCreator, ScheduleTests
-
-from GUIElements import SelectorGroup, SelectorLayout, LayoutFactory, AppScreen, PageOne
-from General import Functions, Constants
+from GUIElements import LayoutFactory
+from General import Functions
 
 
 class PageTwo(LayoutFactory.make_layout(BoxLayout)):

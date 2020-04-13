@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83123390-fab2-4dbb-9dad-28d44ba2b183" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GUIElements/PageOne.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUIElements/PageTwo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScheduleFiles/ScheduleTests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stevens/MyStevens.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUIElements/SelectorLayout.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/SelectorLayout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUIElements/SelectorPopup.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/SelectorPopup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/General/Constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/General/Constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/General/Functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/General/Functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScheduleCreator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScheduleFiles/ScheduleCreator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stevens/Section.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stevens/Section.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stevens/Stevens.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stevens/Stevens.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIElements/PageOne.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageOne.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
