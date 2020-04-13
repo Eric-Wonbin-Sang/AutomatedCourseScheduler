@@ -1,5 +1,7 @@
 import datetime
 
+from ScheduleFiles import ScheduleTests
+
 from General import Constants, Functions
 
 
@@ -70,6 +72,15 @@ class Section:
         start_time = Functions.find_first_occurrence_in_dicts("start_time", *self.meeting_dict_list)
         end_time = Functions.find_first_occurrence_in_dicts("end_time", *self.meeting_dict_list)
 
+        if (self.subject_id + self.course_id).replace(" ", "").lower() in ScheduleTests.test_schedule_0:
+            print("{}: \t{} - {}\t{}".format(
+                (self.subject_id + self.course_id + self.id).replace(" ", "").lower(),
+                start_time,
+                end_time,
+                self.day_list
+            )
+            )
+
         if type(start_time) == str and type(end_time) == str:
             split_start_time = str(start_time).split(":")
             split_end_time = str(end_time).split(":")
@@ -81,8 +92,23 @@ class Section:
                 start_time[0] += 12
                 end_time[0] += 12
 
+            if (self.subject_id + self.course_id).replace(" ", "").lower() in ScheduleTests.test_schedule_0:
+                print("\t", start_time[0], start_time[1], "\t | ", end_time[0], end_time[1])
+
+            if start_time[0] > 24:
+                start_time[0] -= 12
+                if (self.subject_id + self.course_id).replace(" ", "").lower() in ScheduleTests.test_schedule_0:
+                    print("\ttime changed")
+            if end_time[0] > 24:
+                end_time[0] -= 12
+                if (self.subject_id + self.course_id).replace(" ", "").lower() in ScheduleTests.test_schedule_0:
+                    print("\ttime changed")
+
             start_time = datetime.time(start_time[0], start_time[1])
             end_time = datetime.time(end_time[0], end_time[1])
+
+            if (self.subject_id + self.course_id).replace(" ", "").lower() in ScheduleTests.test_schedule_0:
+                print("\t", start_time.strftime('%I:%M %p'), " | ", end_time.strftime('%I:%M %p'))
 
         return start_time, end_time
 

@@ -6,7 +6,7 @@ from GUIElements.SelectorPopup import SelectorPopup
 
 class SelectorLayout(BoxLayout):
 
-    def __init__(self, selector_group, stevens):
+    def __init__(self, selector_group, stevens, spec_course_name=""):
         super().__init__(
             orientation='horizontal',
             size_hint=(1, .2),
@@ -18,7 +18,8 @@ class SelectorLayout(BoxLayout):
         self.selector_group = selector_group
         self.stevens = stevens
 
-        self.selector_button = SelectorButton(stevens=self.stevens)
+        self.selector_button = SelectorButton(stevens=self.stevens,
+                                              spec_course_name=spec_course_name)
         self.remove_button = RemoveSelectorButton(self, self.selector_group)
 
         self.add_elements()
@@ -76,7 +77,7 @@ class RemoveSelectorButton(Button):
 
 class SelectorButton(Button):
 
-    def __init__(self, stevens):
+    def __init__(self, stevens, spec_course_name=""):
 
         super().__init__(
             text="No Course Selected",
@@ -86,7 +87,9 @@ class SelectorButton(Button):
         )
 
         self.stevens = stevens
-        self.selector_popup = SelectorPopup(selector_button=self, stevens=self.stevens)
+        self.selector_popup = SelectorPopup(selector_button=self,
+                                            stevens=self.stevens,
+                                            spec_course_name=spec_course_name)
 
     def on_press(self):
         self.selector_popup.open()

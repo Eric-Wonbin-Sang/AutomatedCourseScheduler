@@ -52,7 +52,7 @@ def clean_dict(data_dict):
 
 
 def is_connected():
-    return False
+    return True
 
 
 def multiply_list(data_list):

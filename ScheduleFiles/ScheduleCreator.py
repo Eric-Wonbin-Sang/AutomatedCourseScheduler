@@ -6,6 +6,7 @@ class Schedule:
     def __init__(self, section_list):
 
         self.section_list = section_list
+
         self.credit_sum = self.section_list_to_credit_count()
         self.url = self.get_url()
 

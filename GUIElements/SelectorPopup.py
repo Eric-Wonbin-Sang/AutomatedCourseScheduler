@@ -15,12 +15,12 @@ from General import Functions, Constants
 
 class SelectorPopup(Popup):
 
-    def __init__(self, selector_button, stevens):
+    def __init__(self, selector_button, stevens, spec_course_name=""):
 
         self.selector_button = selector_button
         self.stevens = stevens
 
-        self.curr_course = self.get_init_course()
+        self.curr_course = self.get_init_course(spec_course_name=spec_course_name)
         self.popup_layout, self.section_layout = self.get_layouts()
 
         super().__init__(
@@ -30,7 +30,9 @@ class SelectorPopup(Popup):
             auto_dismiss=False
         )
 
-    def get_init_course(self):
+    def get_init_course(self, spec_course_name=""):
+        if spec_course_name != "":
+            return self.stevens.get_spec_course(spec_course_name=spec_course_name)
         return self.stevens.get_rand_course() if Constants.do_rand_course else None
 
     def get_layouts(self):
