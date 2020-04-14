@@ -1,7 +1,7 @@
 from kivy.uix.boxlayout import BoxLayout
 
 from GUIElements import LayoutFactory
-from GUIElements.PageTwo import BackButton, ForwardButton
+from GUIElements.PageTwo import BackButton, ScheduleIndicatorLabel, ForwardButton
 
 from General import Functions
 
@@ -14,7 +14,7 @@ class ScheduleArrowGroup(LayoutFactory.make_layout(BoxLayout)):
             orientation="horizontal",
             spacing=15,
             padding=10,
-            size_hint=(1, 1),
+            size_hint=(1, .2),
             background_color=(255, 255, 255),
             pos_hint={'center_x': .5, 'center_y': .5}
         )
@@ -23,6 +23,7 @@ class ScheduleArrowGroup(LayoutFactory.make_layout(BoxLayout)):
         self.acs_app = acs_app
 
         self.back_button = BackButton.BackButton(acs_app=self.acs_app, page_two=self.page_two)
+        self.schedule_indicator_label = ScheduleIndicatorLabel.ScheduleIndicatorLabel(page_two=self.page_two)
         self.forward_button = ForwardButton.ForwardButton(acs_app=self.acs_app, page_two=self.page_two)
 
         self.do_init_setup()
@@ -31,5 +32,6 @@ class ScheduleArrowGroup(LayoutFactory.make_layout(BoxLayout)):
         Functions.add_to_layout(
             self,
             self.back_button,
+            self.schedule_indicator_label,
             self.forward_button
         )

@@ -33,4 +33,9 @@ class StartButton(Button):
             #                                      section.end_time.strftime('%I:%M %p')))
         print("------------------")
         self.acs_app.schedule_list = schedule_list
+        self.acs_app.screen_two.child_widget.schedule_arrow_group.schedule_indicator_label.update()
+
+        if schedule_list:
+            self.acs_app.screen_two.child_widget.schedule_layout.update_schedule(schedule_list[0])
+
         self.acs_app.screen_manager.current = "two"

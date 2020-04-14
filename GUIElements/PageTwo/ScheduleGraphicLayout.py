@@ -27,14 +27,11 @@ class ScheduleGraphicLayout(LayoutFactory.make_layout(BoxLayout)):
 
         Functions.clear_layout(self)
 
-        label = Kiveasy.Label(
-            text="No schedules generated",
-            color=[0, 0, 0]
-        )
-
         Functions.add_to_layout(
             self,
-            label
+            Kiveasy.Label(
+                text="No schedules generated"
+            )
         )
 
     def update_schedule(self, schedule):
@@ -45,7 +42,6 @@ class ScheduleGraphicLayout(LayoutFactory.make_layout(BoxLayout)):
             self,
             Kiveasy.Label(
                 text="{}: {}".format(self.page_two.curr_schedule_index,
-                                     schedule.url),
-                color=[0, 0, 0]
+                                     schedule.url)
             )
         )

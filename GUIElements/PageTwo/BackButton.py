@@ -7,8 +7,8 @@ class BackButton(Button):
 
         super().__init__(
             text="<",
-            size_hint=(.6, None),
-            size=(100, 44),
+            size_hint=(.2, None),
+            size=(30, 44),
             pos_hint={'center_x': .5, 'center_y': .5}
         )
 
@@ -23,5 +23,7 @@ class BackButton(Button):
                 self.page_two.curr_schedule_index = len(self.acs_app.schedule_list) - 1
 
             self.page_two.schedule_layout.update_schedule(self.acs_app.schedule_list[self.page_two.curr_schedule_index])
+            self.page_two.schedule_arrow_group.schedule_indicator_label.update()
+
         else:
             self.page_two.schedule_layout.do_init_setup()

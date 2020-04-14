@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83123390-fab2-4dbb-9dad-28d44ba2b183" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GUIElements/PageTwo/PageOneButton.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUIElements/PageTwo/ScheduleDropDown.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUIElements/PageTwo/ScheduleIndicatorLabel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIElements/PageOne/StartButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageOne/StartButton.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo/BackButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo/BackButton.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo/ForwardButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo/ForwardButton.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo/PageTwo.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo/PageTwo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo/ScheduleArrowGroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo/ScheduleArrowGroup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo/ScheduleGraphicLayout.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo/ScheduleGraphicLayout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stevens/Stevens.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stevens/Stevens.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/General/Kiveasy.py" beforeDir="false" afterPath="$PROJECT_DIR$/General/Kiveasy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stevens/XML Sources2020F.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Stevens/XML Sources2020F.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
