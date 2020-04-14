@@ -27,10 +27,6 @@ class StartButton(Button):
 
         for i, schedule in enumerate(schedule_list):
             print("{})\t{}".format(i + 1, schedule.url))
-            # for section in schedule.section_list:
-            #     print("\t{}: \t{} - \t{}".format(section.section,
-            #                                      section.start_time.strftime('%I:%M %p'),
-            #                                      section.end_time.strftime('%I:%M %p')))
         print("------------------")
         self.acs_app.schedule_list = schedule_list
         self.acs_app.screen_two.child_widget.schedule_arrow_group.schedule_indicator_label.update()

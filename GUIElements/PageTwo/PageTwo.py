@@ -35,3 +35,9 @@ class PageTwo(LayoutFactory.make_layout(BoxLayout)):
             self.schedule_layout,
             self.page_one_button
         )
+
+    def update_indicator_label(self):
+        self.schedule_arrow_group.schedule_indicator_label.update()
+
+    def update_schedule(self):
+        self.schedule_layout.update_schedule(self.acs_app.schedule_list[self.curr_schedule_index])

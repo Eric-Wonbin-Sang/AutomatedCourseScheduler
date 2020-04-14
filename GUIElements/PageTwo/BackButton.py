@@ -22,8 +22,8 @@ class BackButton(Button):
             if self.page_two.curr_schedule_index < 0:
                 self.page_two.curr_schedule_index = len(self.acs_app.schedule_list) - 1
 
-            self.page_two.schedule_layout.update_schedule(self.acs_app.schedule_list[self.page_two.curr_schedule_index])
-            self.page_two.schedule_arrow_group.schedule_indicator_label.update()
+            self.page_two.update_schedule()
+            self.page_two.update_indicator_label()
 
         else:
             self.page_two.schedule_layout.do_init_setup()

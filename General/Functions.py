@@ -2,6 +2,10 @@ import pickle
 import os
 
 
+def time_to_nice_str(dt_obj):
+    return dt_obj.strftime("%H:%M %p")
+
+
 def string_to_length(some_str, length, flush="left", dots=False):
     new_str = some_str[:min(length, len(some_str))]
     if flush == "left":
@@ -95,8 +99,11 @@ def remove_from_dict(data_dict, *keys):
 # GUI funcs ---------------------------------------------------------------------
 
 def clear_layout(layout):
-    for child in layout.children:
-        layout.remove_widget(child)
+    # for child in layout.children:
+    #     layout.remove_widget(child)
+    while len(layout.children) > 0:
+        for child in layout.children:
+            layout.remove_widget(child)
     return layout
 
 
