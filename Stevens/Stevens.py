@@ -16,7 +16,7 @@ class Stevens:
 
     def get_term(self):
 
-        xml_file_name = self.term_key + ".xml"
+        xml_file_name = "Stevens/XML Sources" + self.term_key + ".xml"
         if Functions.is_connected():
             xml = requests.get(Constants.term_url_dict[self.term_key], allow_redirects=True)
             open(xml_file_name, 'wb').write(xml.content)

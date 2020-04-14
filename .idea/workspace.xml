@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83123390-fab2-4dbb-9dad-28d44ba2b183" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo/BackButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo/BackButton.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo/ForwardButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo/ForwardButton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo/PageTwo.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo/PageTwo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo/ScheduleGraphicLayout.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo/ScheduleGraphicLayout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stevens/Stevens.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stevens/Stevens.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,11 +38,11 @@
       <recent name="C:\Users\gener\CodingProjects\AutomatedCourseScheduler" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler\Stevens\XML Sources" />
       <recent name="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler\General" />
       <recent name="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler\GUIElements\PageOne" />
       <recent name="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler\GUIElements\PageTwo" />
       <recent name="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler\ScheduleFiles" />
-      <recent name="C:\Users\gener\CodingProjects\AutomatedCourseScheduler\Images" />
     </key>
   </component>
   <component name="RunDashboard">

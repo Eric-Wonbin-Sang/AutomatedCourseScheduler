@@ -23,7 +23,7 @@ class PageTwo(LayoutFactory.make_layout(BoxLayout)):
 
         self.schedule_arrow_group = ScheduleArrowGroup.ScheduleArrowGroup(page_two=self, acs_app=self.acs_app)
         self.curr_schedule_index = 0
-        self.schedule_layout = ScheduleGraphicLayout.ScheduleGraphicLayout(schedule=None)
+        self.schedule_layout = ScheduleGraphicLayout.ScheduleGraphicLayout(page_two=self, schedule=None)
 
         self.add_components()
 

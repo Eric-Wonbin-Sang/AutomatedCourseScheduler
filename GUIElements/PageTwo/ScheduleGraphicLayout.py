@@ -7,7 +7,7 @@ from General import Functions, Kiveasy
 
 class ScheduleGraphicLayout(LayoutFactory.make_layout(BoxLayout)):
 
-    def __init__(self, schedule):
+    def __init__(self, page_two, schedule):
 
         super().__init__(
             orientation="vertical",
@@ -18,11 +18,14 @@ class ScheduleGraphicLayout(LayoutFactory.make_layout(BoxLayout)):
             pos_hint={'center_x': .5, 'center_y': .5}
         )
 
+        self.page_two = page_two
         self.schedule = schedule
 
         self.do_init_setup()
 
     def do_init_setup(self):
+
+        Functions.clear_layout(self)
 
         label = Kiveasy.Label(
             text="No schedules generated",
@@ -36,15 +39,13 @@ class ScheduleGraphicLayout(LayoutFactory.make_layout(BoxLayout)):
 
     def update_schedule(self, schedule):
 
-        Functions.clear_layout(self.page_two.schedule_layout)
-
-        label = Kiveasy.Label(
-            text="{}: {}".format(self.page_two.curr_schedule_index,
-                                 schedule.url),
-            color=[0, 0, 0]
-        )
+        Functions.clear_layout(self)
 
         Functions.add_to_layout(
             self,
-            label
+            Kiveasy.Label(
+                text="{}: {}".format(self.page_two.curr_schedule_index,
+                                     schedule.url),
+                color=[0, 0, 0]
+            )
         )

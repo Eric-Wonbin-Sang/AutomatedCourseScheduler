@@ -23,3 +23,5 @@ class BackButton(Button):
                 self.page_two.curr_schedule_index = len(self.acs_app.schedule_list) - 1
 
             self.page_two.schedule_layout.update_schedule(self.acs_app.schedule_list[self.page_two.curr_schedule_index])
+        else:
+            self.page_two.schedule_layout.do_init_setup()

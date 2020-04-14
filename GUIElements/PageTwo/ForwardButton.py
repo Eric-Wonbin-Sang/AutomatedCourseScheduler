@@ -23,3 +23,5 @@ class ForwardButton(Button):
                 self.page_two.curr_schedule_index = 0
 
             self.page_two.schedule_layout.update_schedule(self.acs_app.schedule_list[self.page_two.curr_schedule_index])
+        else:
+            self.page_two.schedule_layout.do_init_setup()
