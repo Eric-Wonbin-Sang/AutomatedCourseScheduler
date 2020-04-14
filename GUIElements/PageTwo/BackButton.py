@@ -1,7 +1,5 @@
 from kivy.uix.button import Button
 
-from General import Functions, Kiveasy
-
 
 class BackButton(Button):
 
@@ -20,19 +18,8 @@ class BackButton(Button):
     def on_press(self):
         if self.acs_app.schedule_list:
 
-            Functions.clear_layout(self.page_two.schedule_layout)
-
             self.page_two.curr_schedule_index += -1
             if self.page_two.curr_schedule_index < 0:
                 self.page_two.curr_schedule_index = len(self.acs_app.schedule_list) - 1
 
-            label = Kiveasy.Label(
-                text="{}: {}".format(self.page_two.curr_schedule_index,
-                                     self.acs_app.schedule_list[self.page_two.curr_schedule_index].url),
-                color=[0, 0, 0]
-            )
-
-            Functions.add_to_layout(
-                self.page_two.schedule_layout,
-                label
-            )
+            self.page_two.schedule_layout.update_schedule(self.acs_app.schedule_list[self.page_two.curr_schedule_index])
