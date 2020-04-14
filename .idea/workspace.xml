@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83123390-fab2-4dbb-9dad-28d44ba2b183" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GUIElements/PageOne/AddSelectorButton.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUIElements/PageOne/StartButton.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUIElements/PageOne.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageOne.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020F.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2020F.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIElements/PageOne.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageOne/PageOne.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo/PageTwo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIElements/SelectorGroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageOne/SelectorGroup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIElements/SelectorLayout.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageOne/SelectorLayout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIElements/SelectorPopup.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageOne/SelectorPopup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,15 +36,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler\ScheduleFiles" />
-      <recent name="C:\Users\gener\CodingProjects\AutomatedCourseScheduler\Images" />
-      <recent name="C:\Users\gener\CodingProjects\AutomatedCourseScheduler\Stevens" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gener\CodingProjects\AutomatedCourseScheduler\Stevens" />
       <recent name="C:\Users\gener\CodingProjects\AutomatedCourseScheduler\General" />
       <recent name="C:\Users\gener\CodingProjects\AutomatedCourseScheduler" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler\GUIElements\PageOne" />
+      <recent name="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler\GUIElements\PageTwo" />
+      <recent name="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler\ScheduleFiles" />
+      <recent name="C:\Users\gener\CodingProjects\AutomatedCourseScheduler\Images" />
+      <recent name="C:\Users\gener\CodingProjects\AutomatedCourseScheduler\Stevens" />
     </key>
   </component>
   <component name="RunDashboard">

@@ -4,7 +4,9 @@ from kivy.uix.screenmanager import ScreenManager
 
 from Stevens import Stevens
 
-from GUIElements import AppScreen, PageOne, PageTwo
+from GUIElements import AppScreen
+from GUIElements.PageTwo import PageTwo
+from GUIElements.PageOne import PageOne
 from General import Functions
 
 
@@ -18,8 +20,10 @@ class ACSApp(App):
 
         self.screen_manager = ScreenManager()
 
-        self.screen_one = AppScreen.AppScreen(name="one", child_widget=PageOne.PageOne(acs_app=self, stevens=self.stevens))
-        self.screen_two = AppScreen.AppScreen(name="two", child_widget=PageTwo.PageTwo(acs_app=self, stevens=self.stevens))
+        self.screen_one = AppScreen.AppScreen(name="one",
+                                              child_widget=PageOne.PageOne(acs_app=self, stevens=self.stevens))
+        self.screen_two = AppScreen.AppScreen(name="two",
+                                              child_widget=PageTwo.PageTwo(acs_app=self, stevens=self.stevens))
 
     def build(self):
 
@@ -32,6 +36,14 @@ class ACSApp(App):
         return self.screen_manager
 
 
-scalar = 1.1
-Window.size = (int(500 * scalar), int(700 * scalar))
-ACSApp().run()
+def main():
+
+    scalar = 110
+    window_width_ratio = 5
+    window_height_ratio = 7
+
+    Window.size = (int(window_width_ratio * scalar), int(window_height_ratio * scalar))
+    ACSApp().run()
+
+
+main()

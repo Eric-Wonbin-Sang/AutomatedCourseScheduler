@@ -1,7 +1,7 @@
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 
-from GUIElements.SelectorPopup import SelectorPopup
+from GUIElements.PageOne.SelectorPopup import SelectorPopup
 
 
 class SelectorLayout(BoxLayout):

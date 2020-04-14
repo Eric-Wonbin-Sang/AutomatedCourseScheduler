@@ -3,8 +3,8 @@
 <!--Last update: 4-Nov-2008 20:28-->
 <!--Original Author: Peter Garafano-->
 <!--This data is solely for the use of Stevens Institute of Technology, its students and faculty.-->
-<!--File created: Mon Apr 13 17:52:48 2020-->
-<!--The xml file was 1064 seconds old.-->
+<!--File created: Tue Apr 14 00:58:05 2020-->
+<!--The xml file was 2097 seconds old.-->
 <!--Courses parsed: 2126-->
 <!--Meetings parsed: 2218-->
 <!--Requirements parsed: 2583-->
@@ -77,7 +77,7 @@
 		<Meeting Day="W" StartTime="8:00:00Z" EndTime="10:30:00Z" Site="Castle Point" Building="" Room="" Activity="LEC"/>
 		<Requirement Control="PUN" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
-	<Course Section="BIA 656A" Title="Adv Data Analytics&amp;Machine Learn" CallNumber="11316" MinCredit="3" MaxCredit="3" MaxEnrollment="40" CurrentEnrollment="31" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Creamer G" Term="2020F">
+	<Course Section="BIA 656A" Title="Adv Data Analytics&amp;Machine Learn" CallNumber="11316" MinCredit="3" MaxCredit="3" MaxEnrollment="40" CurrentEnrollment="30" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Creamer G" Term="2020F">
 		<Meeting Day="R" StartTime="8:30:00Z" EndTime="11:00:00Z" Site="Castle Point" Building="BC" Room="HFSL" Activity="LEC"/>
 		<Requirement Control="PUN" Argument="" Value1="" Operator="" Value2=""/>
 		<Requirement Control="RQ" Argument="" Value1="BIA 652" Operator="" Value2="MGT 620"/>
@@ -98,7 +98,7 @@
 		<Meeting Day="R" StartTime="8:30:00Z" EndTime="11:00:00Z" Site="Castle Point" Building="" Room="" Activity="LEC"/>
 		<Requirement Control="PUN" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
-	<Course Section="BIA 660WS" Title="Web Mining" CallNumber="11324" MinCredit="3" MaxCredit="3" MaxEnrollment="50" CurrentEnrollment="22" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lappas T" Term="2020F">
+	<Course Section="BIA 660WS" Title="Web Mining" CallNumber="11324" MinCredit="3" MaxCredit="3" MaxEnrollment="50" CurrentEnrollment="23" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lappas T" Term="2020F">
 		<Meeting Day="TBA" Site="WS" Building="OFF" Room="WEB" Activity="LEC"/>
 		<Requirement Control="PUN" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
@@ -521,7 +521,7 @@
 		<Requirement Control="RQ" Argument="" Value1="MA  115" Operator="" Value2="MA  181"/>
 		<Requirement Control="RQ" Argument="" Value1="MA  122" Operator="" Value2=""/>
 	</Course>
-	<Course Section="BT 243A" Title="Macroeconomics" CallNumber="11422" MinCredit="3" MaxCredit="3" MaxEnrollment="25" CurrentEnrollment="11" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="BT 243A" Title="Macroeconomics" CallNumber="11422" MinCredit="3" MaxCredit="3" MaxEnrollment="25" CurrentEnrollment="12" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="TR" StartTime="8:30:00Z" EndTime="9:45:00Z" Site="Castle Point" Building="M" Room="103" Activity="LEC"/>
 		<Meeting Day="F" StartTime="4:00:00Z" EndTime="4:50:00Z" Site="Castle Point" Building="" Room="" Activity="LEC"/>
 	</Course>
@@ -577,7 +577,7 @@
 		<Meeting Day="W" StartTime="6:00:00Z" EndTime="6:50:00Z" Site="Castle Point" Building="P" Room="116" Activity="LEC"/>
 		<Requirement Control="PDP" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
-	<Course Section="BT 290QB" Title="Business Career Seminar" CallNumber="11434" MinCredit="0" MaxCredit="0" MaxEnrollment="50" CurrentEnrollment="3" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="BT 290QB" Title="Business Career Seminar" CallNumber="11434" MinCredit="0" MaxCredit="0" MaxEnrollment="50" CurrentEnrollment="4" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="W" StartTime="5:00:00Z" EndTime="5:50:00Z" Site="Castle Point" Building="" Room="" Activity="LEC"/>
 	</Course>
 	<Course Section="BT 321A" Title="Corporate Finance" CallNumber="11435" MinCredit="3" MaxCredit="3" MaxEnrollment="50" CurrentEnrollment="50" Status="C" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
@@ -1370,7 +1370,7 @@
 		<Requirement Control="RQ" Argument="" Value1="CH  116" Operator="" Value2="CH  118"/>
 		<Requirement Control="CA" Argument="" Value1="RCT" Operator="" Value2=""/>
 	</Course>
-	<Course Section="CH 243C" Title="Organic Chemistry I" CallNumber="11656" MinCredit="3" MaxCredit="3" MaxEnrollment="56" CurrentEnrollment="55" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Alluri S" Term="2020F">
+	<Course Section="CH 243C" Title="Organic Chemistry I" CallNumber="11656" MinCredit="3" MaxCredit="3" MaxEnrollment="56" CurrentEnrollment="56" Status="C" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Alluri S" Term="2020F">
 		<Meeting Day="TR" StartTime="7:00:00Z" EndTime="7:50:00Z" Site="Castle Point" Building="K" Room="360" Activity="LEC"/>
 		<Requirement Control="NQ" Argument="" Value1="CH  245" Operator="" Value2=""/>
 		<Requirement Control="RQ" Argument="" Value1="CH  116" Operator="" Value2="CH  118"/>
@@ -1397,7 +1397,7 @@
 		<Requirement Control="CA" Argument="" Value1="LEC" Operator="" Value2=""/>
 		<Requirement Control="CS" Argument="" Value1="CH  243B" Operator="" Value2=""/>
 	</Course>
-	<Course Section="CH 243RD" Title="Organic Chemistry I" CallNumber="11660" MinCredit="0" MaxCredit="0" MaxEnrollment="28" CurrentEnrollment="27" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Alluri S" Term="2020F">
+	<Course Section="CH 243RD" Title="Organic Chemistry I" CallNumber="11660" MinCredit="0" MaxCredit="0" MaxEnrollment="28" CurrentEnrollment="28" Status="C" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Alluri S" Term="2020F">
 		<Meeting Day="W" StartTime="6:00:00Z" EndTime="6:50:00Z" Site="Castle Point" Building="BC" Room="203" Activity="RCT"/>
 		<Requirement Control="NQ" Argument="" Value1="CH  245" Operator="" Value2=""/>
 		<Requirement Control="RQ" Argument="" Value1="CH  116" Operator="" Value2="CH  118"/>
@@ -1633,7 +1633,7 @@
 		<Meeting Day="TBA" Site="Castle Point" Building="N/A" Room="N/A" Activity="LEC"/>
 		<Requirement Control="PAD" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
-	<Course Section="CHE 210A" Title="Process Analysis" CallNumber="11715" MinCredit="3" MaxCredit="3" MaxEnrollment="30" CurrentEnrollment="20" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lawal A" Term="2020F">
+	<Course Section="CHE 210A" Title="Process Analysis" CallNumber="11715" MinCredit="3" MaxCredit="3" MaxEnrollment="30" CurrentEnrollment="21" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lawal A" Term="2020F">
 		<Meeting Day="TR" StartTime="11:30:00Z" EndTime="12:45:00Z" Site="Castle Point" Building="P" Room="220" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="CH  116" Operator="" Value2=""/>
 		<Requirement Control="R&amp;" Argument="" Value1="MA  221" Operator="" Value2=""/>
@@ -1907,12 +1907,12 @@
 		<Meeting Day="TBA" Site="Castle Point" Building="N/A" Room="N/A" Activity="LEC"/>
 		<Requirement Control="PAD" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
-	<Course Section="CPE 322A" Title="Engineering Design VI" CallNumber="11785" MinCredit="2" MaxCredit="2" MaxEnrollment="0" CurrentEnrollment="7" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lu K" Term="2020F">
+	<Course Section="CPE 322A" Title="Engineering Design VI" CallNumber="11785" MinCredit="2" MaxCredit="2" MaxEnrollment="0" CurrentEnrollment="8" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lu K" Term="2020F">
 		<Meeting Day="M" StartTime="6:00:00Z" EndTime="7:50:00Z" Site="Castle Point" Building="BC" Room="212" Activity="L/L"/>
 		<Requirement Control="RQ" Argument="" Value1="E   321" Operator="" Value2=""/>
 		<Requirement Control="N&amp;" Argument="" Value1="EE  345" Operator="" Value2="CPE 345"/>
 	</Course>
-	<Course Section="CPE 345A" Title="Modeling and Simulation" CallNumber="11786" MinCredit="3" MaxCredit="3" MaxEnrollment="39" CurrentEnrollment="21" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Comaniciu C" Term="2020F">
+	<Course Section="CPE 345A" Title="Modeling and Simulation" CallNumber="11786" MinCredit="3" MaxCredit="3" MaxEnrollment="39" CurrentEnrollment="22" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Comaniciu C" Term="2020F">
 		<Meeting Day="W" StartTime="6:00:00Z" EndTime="7:40:00Z" Site="Castle Point" Building="BC" Room="310" Activity="LEC"/>
 		<Meeting Day="R" StartTime="6:00:00Z" EndTime="6:50:00Z" Site="Castle Point" Building="BC" Room="310" Activity="LEC"/>
 	</Course>
@@ -1959,7 +1959,7 @@
 		<Requirement Control="RQ" Argument="" Value1="CS  590" Operator="" Value2="CPE 590"/>
 		<Requirement Control="RQ" Argument="" Value1="CPE 385" Operator="" Value2=""/>
 	</Course>
-	<Course Section="CPE 462A" Title="Intro to Image. Proc. &amp; Coding" CallNumber="11800" MinCredit="3" MaxCredit="3" MaxEnrollment="39" CurrentEnrollment="16" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Man H" Term="2020F">
+	<Course Section="CPE 462A" Title="Intro to Image. Proc. &amp; Coding" CallNumber="11800" MinCredit="3" MaxCredit="3" MaxEnrollment="39" CurrentEnrollment="17" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Man H" Term="2020F">
 		<Meeting Day="R" StartTime="14:30:00Z" EndTime="17:20:00Z" Site="Castle Point" Building="X" Room="105" Activity="LEC"/>
 	</Course>
 	<Course Section="CPE 485A" Title="Research in CPE I" CallNumber="11801" MinCredit="3" MaxCredit="3" MaxEnrollment="0" CurrentEnrollment="0" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
@@ -1967,7 +1967,7 @@
 		<Requirement Control="PIN" Argument="" Value1="" Operator="" Value2=""/>
 		<Requirement Control="PDP" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
-	<Course Section="CPE 487A" Title="Digital System Design" CallNumber="11802" MinCredit="3" MaxCredit="3" MaxEnrollment="69" CurrentEnrollment="59" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lu K" Term="2020F">
+	<Course Section="CPE 487A" Title="Digital System Design" CallNumber="11802" MinCredit="3" MaxCredit="3" MaxEnrollment="69" CurrentEnrollment="60" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lu K" Term="2020F">
 		<Meeting Day="T" StartTime="8:30:00Z" EndTime="9:45:00Z" Site="Castle Point" Building="B" Room="517" Activity="LEC"/>
 		<Meeting Day="R" StartTime="8:30:00Z" EndTime="9:45:00Z" Site="Castle Point" Building="B" Room="517" Activity="LEC"/>
 	</Course>
@@ -1987,7 +1987,7 @@
 		<Requirement Control="RQ" Argument="" Value1="CS  590" Operator="" Value2=""/>
 		<Requirement Control="RQ" Argument="" Value1="CS  385" Operator="" Value2="CS  182"/>
 	</Course>
-	<Course Section="CPE 517A" Title="Digital &amp; Comp Sys Architecture" CallNumber="11806" MinCredit="3" MaxCredit="3" MaxEnrollment="49" CurrentEnrollment="11" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Ahmad A" Term="2020F">
+	<Course Section="CPE 517A" Title="Digital &amp; Comp Sys Architecture" CallNumber="11806" MinCredit="3" MaxCredit="3" MaxEnrollment="49" CurrentEnrollment="12" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Ahmad A" Term="2020F">
 		<Meeting Day="M" StartTime="11:00:00Z" EndTime="13:30:00Z" Site="Castle Point" Building="NB" Room="105" Activity="LEC"/>
 	</Course>
 	<Course Section="CPE 521A" Title="Intro Autonomous Mobile Robots" CallNumber="11807" MinCredit="3" MaxCredit="3" MaxEnrollment="29" CurrentEnrollment="8" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Guo Y" Term="2020F">
@@ -2030,7 +2030,7 @@
 		<Meeting Day="W" StartTime="14:30:00Z" EndTime="17:00:00Z" Site="Castle Point" Building="B" Room="430" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="CS  570" Operator="" Value2="CS  501"/>
 	</Course>
-	<Course Section="CPE 593A" Title="Applied Data Struct. &amp; Algor." CallNumber="13802" MinCredit="3" MaxCredit="3" MaxEnrollment="59" CurrentEnrollment="44" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Kruger D" Term="2020F">
+	<Course Section="CPE 593A" Title="Applied Data Struct. &amp; Algor." CallNumber="13802" MinCredit="3" MaxCredit="3" MaxEnrollment="59" CurrentEnrollment="45" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Kruger D" Term="2020F">
 		<Meeting Day="T" StartTime="14:30:00Z" EndTime="17:00:00Z" Site="Castle Point" Building="" Room="" Activity="LEC"/>
 	</Course>
 	<Course Section="CPE 599A" Title="Curricular Practical Training" CallNumber="11823" MinCredit="1" MaxCredit="3" MaxEnrollment="0" CurrentEnrollment="0" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Tavassolian N" Term="2020F">
@@ -2232,7 +2232,7 @@
 		<Requirement Control="CA" Argument="" Value1="LEC" Operator="" Value2=""/>
 		<Requirement Control="CS" Argument="" Value1="CS  115D" Operator="" Value2=""/>
 	</Course>
-	<Course Section="CS 135A" Title="Discrete Structures" CallNumber="11886" MinCredit="4" MaxCredit="4" MaxEnrollment="99" CurrentEnrollment="94" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Bhatt S" Term="2020F">
+	<Course Section="CS 135A" Title="Discrete Structures" CallNumber="11886" MinCredit="4" MaxCredit="4" MaxEnrollment="99" CurrentEnrollment="95" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Bhatt S" Term="2020F">
 		<Meeting Day="MWF" StartTime="7:00:00Z" EndTime="7:50:00Z" Site="Castle Point" Building="BC" Room="122" Activity="LEC"/>
 		<Requirement Control="CA" Argument="" Value1="LAB" Operator="" Value2=""/>
 	</Course>
@@ -2248,7 +2248,7 @@
 		<Meeting Day="T" StartTime="8:30:00Z" EndTime="10:10:00Z" Site="Castle Point" Building="BC" Room="532B" Activity="LAB"/>
 		<Requirement Control="CA" Argument="" Value1="LEC" Operator="" Value2=""/>
 	</Course>
-	<Course Section="CS 135LD" Title="Discrete Structures" CallNumber="11890" MinCredit="0" MaxCredit="0" MaxEnrollment="29" CurrentEnrollment="19" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="CS 135LD" Title="Discrete Structures" CallNumber="11890" MinCredit="0" MaxCredit="0" MaxEnrollment="29" CurrentEnrollment="20" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="T" StartTime="10:30:00Z" EndTime="12:10:00Z" Site="Castle Point" Building="B" Room="514" Activity="LAB"/>
 		<Requirement Control="CA" Argument="" Value1="LEC" Operator="" Value2=""/>
 	</Course>
@@ -2256,7 +2256,7 @@
 		<Meeting Day="T" StartTime="15:00:00Z" EndTime="16:40:00Z" Site="Castle Point" Building="M" Room="205" Activity="LAB"/>
 		<Requirement Control="CA" Argument="" Value1="LEC" Operator="" Value2=""/>
 	</Course>
-	<Course Section="CS 146A" Title="Intro to Web Prgming &amp; Web Dev" CallNumber="11892" MinCredit="3" MaxCredit="3" MaxEnrollment="69" CurrentEnrollment="17" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Dunn E" Term="2020F">
+	<Course Section="CS 146A" Title="Intro to Web Prgming &amp; Web Dev" CallNumber="11892" MinCredit="3" MaxCredit="3" MaxEnrollment="69" CurrentEnrollment="18" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Dunn E" Term="2020F">
 		<Meeting Day="TR" StartTime="11:30:00Z" EndTime="12:45:00Z" Site="Castle Point" Building="" Room="" Activity="LEC"/>
 	</Course>
 	<Course Section="CS 284A" Title="Data Structures" CallNumber="11896" MinCredit="4" MaxCredit="4" MaxEnrollment="59" CurrentEnrollment="43" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Bonelli E" Term="2020F">
@@ -2586,7 +2586,7 @@
 		<Meeting Day="TBA" Site="WS" Building="OFF" Room="WEB" Activity="LEC"/>
 		<Requirement Control="MN" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
-	<Course Section="CS 503A" Title="Discrete Math for Cryptography" CallNumber="11972" MinCredit="3" MaxCredit="3" MaxEnrollment="29" CurrentEnrollment="23" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Suffel C" Term="2020F">
+	<Course Section="CS 503A" Title="Discrete Math for Cryptography" CallNumber="11972" MinCredit="3" MaxCredit="3" MaxEnrollment="29" CurrentEnrollment="24" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Suffel C" Term="2020F">
 		<Meeting Day="W" StartTime="14:30:00Z" EndTime="17:00:00Z" Site="Castle Point" Building="P" Room="218" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="MA  502" Operator="" Value2="CS  135"/>
 	</Course>
@@ -2643,7 +2643,7 @@
 		<Meeting Day="R" StartTime="14:30:00Z" EndTime="17:00:00Z" Site="Castle Point" Building="NB" Room="105" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="CS  520" Operator="" Value2="CS  492"/>
 	</Course>
-	<Course Section="CS 522WS" Title="Mobile Systems and Applications" CallNumber="11985" MinCredit="3" MaxCredit="3" MaxEnrollment="49" CurrentEnrollment="19" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Duggan D" Term="2020F">
+	<Course Section="CS 522WS" Title="Mobile Systems and Applications" CallNumber="11985" MinCredit="3" MaxCredit="3" MaxEnrollment="49" CurrentEnrollment="20" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Duggan D" Term="2020F">
 		<Meeting Day="TBA" Site="WS" Building="OFF" Room="WEB" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="CS  182" Operator="" Value2=""/>
 		<Requirement Control="RQ" Argument="" Value1="CS  385" Operator="" Value2=""/>
@@ -2762,7 +2762,7 @@
 		<Meeting Day="TBA" Site="WS" Building="OFF" Room="WEB" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="MA  222" Operator="" Value2=""/>
 	</Course>
-	<Course Section="CS 561A" Title="Database Management Systems I" CallNumber="12012" MinCredit="3" MaxCredit="3" MaxEnrollment="50" CurrentEnrollment="21" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Kim S" Term="2020F">
+	<Course Section="CS 561A" Title="Database Management Systems I" CallNumber="12012" MinCredit="3" MaxCredit="3" MaxEnrollment="50" CurrentEnrollment="22" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Kim S" Term="2020F">
 		<Meeting Day="T" StartTime="14:30:00Z" EndTime="17:00:00Z" Site="Castle Point" Building="BC" Room="122" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="CS  590" Operator="" Value2=""/>
 		<Requirement Control="RQ" Argument="" Value1="CS  570" Operator="" Value2=""/>
@@ -3691,7 +3691,7 @@
 		<Requirement Control="NQ" Argument="" Value1="E   126" Operator="" Value2=""/>
 		<Requirement Control="R&amp;" Argument="" Value1="E   122" Operator="" Value2=""/>
 	</Course>
-	<Course Section="E 232A" Title="Eng Dsgn IV: Sys w/Analog Circ" CallNumber="12211" MinCredit="3" MaxCredit="3" MaxEnrollment="96" CurrentEnrollment="90" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Ryan K" Term="2020F">
+	<Course Section="E 232A" Title="Eng Dsgn IV: Sys w/Analog Circ" CallNumber="12211" MinCredit="3" MaxCredit="3" MaxEnrollment="96" CurrentEnrollment="91" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Ryan K" Term="2020F">
 		<Meeting Day="F" StartTime="6:00:00Z" EndTime="7:50:00Z" Site="Castle Point" Building="E" Room="222" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="E   231" Operator="" Value2=""/>
 		<Requirement Control="R&amp;" Argument="" Value1="E   245" Operator="" Value2=""/>
@@ -3703,7 +3703,7 @@
 		<Requirement Control="R&amp;" Argument="" Value1="E   245" Operator="" Value2=""/>
 		<Requirement Control="CA" Argument="" Value1="LEC" Operator="" Value2=""/>
 	</Course>
-	<Course Section="E 232LB" Title="Eng Dsgn IV: Sys w/Analog Circ" CallNumber="12213" MinCredit="0" MaxCredit="0" MaxEnrollment="30" CurrentEnrollment="29" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Ryan K" Term="2020F">
+	<Course Section="E 232LB" Title="Eng Dsgn IV: Sys w/Analog Circ" CallNumber="12213" MinCredit="0" MaxCredit="0" MaxEnrollment="30" CurrentEnrollment="30" Status="C" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Ryan K" Term="2020F">
 		<Meeting Day="T" StartTime="4:00:00Z" EndTime="6:50:00Z" Site="Castle Point" Building="B" Room="126" Activity="LAB"/>
 		<Requirement Control="RQ" Argument="" Value1="E   231" Operator="" Value2=""/>
 		<Requirement Control="R&amp;" Argument="" Value1="E   245" Operator="" Value2=""/>
@@ -3980,7 +3980,7 @@
 		<Meeting Day="R" StartTime="15:00:00Z" EndTime="16:50:00Z" Site="Castle Point" Building="B" Room="314" Activity="LAB"/>
 		<Requirement Control="NQ" Argument="" Value1="E   344" Operator="" Value2=""/>
 	</Course>
-	<Course Section="E 321X" Title="Eng Dsgn V: Mat Sel &amp; Proc Opt" CallNumber="12268" MinCredit="2" MaxCredit="2" MaxEnrollment="12" CurrentEnrollment="5" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Libera M" Term="2020F">
+	<Course Section="E 321X" Title="Eng Dsgn V: Mat Sel &amp; Proc Opt" CallNumber="12268" MinCredit="2" MaxCredit="2" MaxEnrollment="12" CurrentEnrollment="6" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Libera M" Term="2020F">
 		<Meeting Day="R" StartTime="15:00:00Z" EndTime="16:50:00Z" Site="Castle Point" Building="B" Room="312" Activity="LAB"/>
 		<Requirement Control="NQ" Argument="" Value1="E   344" Operator="" Value2=""/>
 	</Course>
@@ -4068,7 +4068,7 @@
 		<Requirement Control="RQ" Argument="" Value1="E   243" Operator="" Value2="MA  222"/>
 		<Requirement Control="R&amp;" Argument="" Value1="EE  348" Operator="" Value2=""/>
 	</Course>
-	<Course Section="EE 471A" Title="Trnsprt Pheno/Sld Device" CallNumber="12297" MinCredit="4" MaxCredit="4" MaxEnrollment="69" CurrentEnrollment="68" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Pastore R" Term="2020F">
+	<Course Section="EE 471A" Title="Trnsprt Pheno/Sld Device" CallNumber="12297" MinCredit="4" MaxCredit="4" MaxEnrollment="69" CurrentEnrollment="67" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Pastore R" Term="2020F">
 		<Meeting Day="M" StartTime="10:00:00Z" EndTime="10:50:00Z" Site="Castle Point" Building="BC" Room="104" Activity="LEC"/>
 		<Meeting Day="F" StartTime="7:00:00Z" EndTime="9:50:00Z" Site="Castle Point" Building="BC" Room="104" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="E   232" Operator="" Value2=""/>
@@ -4581,7 +4581,7 @@
 	<Course Section="FE 513A" Title="Financial Lab: Database Design" CallNumber="12453" MinCredit="1" MaxCredit="1" MaxEnrollment="30" CurrentEnrollment="10" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="T" StartTime="16:00:00Z" EndTime="17:00:00Z" Site="Castle Point" Building="BC" Room="HFSL" Activity="LAB"/>
 	</Course>
-	<Course Section="FE 513WS" Title="Financial Lab: Database Design" CallNumber="12454" MinCredit="1" MaxCredit="1" MaxEnrollment="30" CurrentEnrollment="5" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="FE 513WS" Title="Financial Lab: Database Design" CallNumber="12454" MinCredit="1" MaxCredit="1" MaxEnrollment="30" CurrentEnrollment="6" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="TBA" Site="WS" Building="OFF" Room="WEB" Activity="LAB"/>
 	</Course>
 	<Course Section="FE 513WZ" Title="Financial Lab: Database Design" CallNumber="13880" MinCredit="1" MaxCredit="1" MaxEnrollment="30" CurrentEnrollment="0" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Bozdog D" Term="2020F">
@@ -4625,13 +4625,13 @@
 	<Course Section="FE 535B" Title="Intro Financial Risk Management" CallNumber="12466" MinCredit="3" MaxCredit="3" MaxEnrollment="40" CurrentEnrollment="9" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="T" StartTime="14:30:00Z" EndTime="17:00:00Z" Site="Castle Point" Building="" Room="" Activity="LEC"/>
 	</Course>
-	<Course Section="FE 540A" Title="Probability Theory for FE" CallNumber="13879" MinCredit="3" MaxCredit="3" MaxEnrollment="35" CurrentEnrollment="5" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Florescu I" Term="2020F">
+	<Course Section="FE 540A" Title="Probability Theory for FE" CallNumber="13879" MinCredit="3" MaxCredit="3" MaxEnrollment="35" CurrentEnrollment="6" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Florescu I" Term="2020F">
 		<Meeting Day="M" StartTime="14:30:00Z" EndTime="17:00:00Z" Site="Castle Point" Building="" Room="" Activity="LEC"/>
 	</Course>
 	<Course Section="FE 541A" Title="Applied Statistics w/App Finance" CallNumber="12468" MinCredit="3" MaxCredit="3" MaxEnrollment="35" CurrentEnrollment="12" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lee C" Term="2020F">
 		<Meeting Day="W" StartTime="14:30:00Z" EndTime="17:00:00Z" Site="Castle Point" Building="BC" Room="202" Activity="LEC"/>
 	</Course>
-	<Course Section="FE 541WS" Title="Applied Statistics w/App Finance" CallNumber="12469" MinCredit="3" MaxCredit="3" MaxEnrollment="35" CurrentEnrollment="5" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lee C" Term="2020F">
+	<Course Section="FE 541WS" Title="Applied Statistics w/App Finance" CallNumber="12469" MinCredit="3" MaxCredit="3" MaxEnrollment="35" CurrentEnrollment="6" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lee C" Term="2020F">
 		<Meeting Day="TBA" Site="WS" Building="OFF" Room="WEB" Activity="LEC"/>
 	</Course>
 	<Course Section="FE 543A" Title="Intro to StochasticCalforFinance" CallNumber="12470" MinCredit="3" MaxCredit="3" MaxEnrollment="40" CurrentEnrollment="1" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lonon T" Term="2020F">
@@ -4661,7 +4661,7 @@
 		<Meeting Day="T" StartTime="14:00:00Z" EndTime="15:50:00Z" Site="Castle Point" Building="BC" Room="HFSL" Activity="LEC"/>
 		<Requirement Control="NQ" Argument="" Value1="FE  513" Operator="" Value2=""/>
 	</Course>
-	<Course Section="FE 582WS" Title="Found of Financial Data Science" CallNumber="12478" MinCredit="2" MaxCredit="2" MaxEnrollment="50" CurrentEnrollment="2" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Bozdog D" Term="2020F">
+	<Course Section="FE 582WS" Title="Found of Financial Data Science" CallNumber="12478" MinCredit="2" MaxCredit="2" MaxEnrollment="50" CurrentEnrollment="3" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Bozdog D" Term="2020F">
 		<Meeting Day="TBA" Site="WS" Building="OFF" Room="WEB" Activity="LEC"/>
 		<Requirement Control="NQ" Argument="" Value1="FE  513" Operator="" Value2=""/>
 	</Course>
@@ -6269,7 +6269,7 @@
 		<Requirement Control="RQ" Argument="" Value1="MA  116" Operator="" Value2=""/>
 		<Requirement Control="CA" Argument="" Value1="RCT" Operator="" Value2=""/>
 	</Course>
-	<Course Section="MA 221G" Title="Differential Equations" CallNumber="12820" MinCredit="4" MaxCredit="4" MaxEnrollment="40" CurrentEnrollment="15" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="MA 221G" Title="Differential Equations" CallNumber="12820" MinCredit="4" MaxCredit="4" MaxEnrollment="40" CurrentEnrollment="14" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="MWF" StartTime="9:00:00Z" EndTime="9:50:00Z" Site="Castle Point" Building="K" Room="360" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="MA  124" Operator="" Value2="MA  182"/>
 		<Requirement Control="RQ" Argument="" Value1="MA  116" Operator="" Value2=""/>
@@ -6317,7 +6317,7 @@
 		<Requirement Control="RQ" Argument="" Value1="MA  116" Operator="" Value2=""/>
 		<Requirement Control="CA" Argument="" Value1="LEC" Operator="" Value2=""/>
 	</Course>
-	<Course Section="MA 221RG" Title="Differential Equations" CallNumber="12830" MinCredit="0" MaxCredit="0" MaxEnrollment="25" CurrentEnrollment="20" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="MA 221RG" Title="Differential Equations" CallNumber="12830" MinCredit="0" MaxCredit="0" MaxEnrollment="25" CurrentEnrollment="19" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="T" StartTime="7:00:00Z" EndTime="8:15:00Z" Site="Castle Point" Building="E" Room="330" Activity="RCT"/>
 		<Requirement Control="RQ" Argument="" Value1="MA  124" Operator="" Value2="MA  182"/>
 		<Requirement Control="RQ" Argument="" Value1="MA  116" Operator="" Value2=""/>
@@ -6393,7 +6393,7 @@
 		<Meeting Day="MWF" StartTime="8:00:00Z" EndTime="8:50:00Z" Site="Castle Point" Building="P" Room="120" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="MA  124" Operator="" Value2="MA  116"/>
 	</Course>
-	<Course Section="MA 227A" Title="Multivariable Calculus" CallNumber="12841" MinCredit="3" MaxCredit="3" MaxEnrollment="55" CurrentEnrollment="51" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="MA 227A" Title="Multivariable Calculus" CallNumber="12841" MinCredit="3" MaxCredit="3" MaxEnrollment="55" CurrentEnrollment="52" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="MWF" StartTime="5:00:00Z" EndTime="5:50:00Z" Site="Castle Point" Building="BC" Room="321" Activity="LEC"/>
 		<Requirement Control="NQ" Argument="" Value1="MA  221" Operator="" Value2="MA  281"/>
 		<Requirement Control="CA" Argument="" Value1="RCT" Operator="" Value2=""/>
@@ -6403,17 +6403,17 @@
 		<Requirement Control="NQ" Argument="" Value1="MA  221" Operator="" Value2="MA  281"/>
 		<Requirement Control="CA" Argument="" Value1="RCT" Operator="" Value2=""/>
 	</Course>
-	<Course Section="MA 227C" Title="Multivariable Calculus" CallNumber="12843" MinCredit="3" MaxCredit="3" MaxEnrollment="55" CurrentEnrollment="50" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="MA 227C" Title="Multivariable Calculus" CallNumber="12843" MinCredit="3" MaxCredit="3" MaxEnrollment="55" CurrentEnrollment="52" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="MWF" StartTime="8:00:00Z" EndTime="8:50:00Z" Site="Castle Point" Building="P" Room="120" Activity="LEC"/>
 		<Requirement Control="NQ" Argument="" Value1="MA  221" Operator="" Value2="MA  281"/>
 		<Requirement Control="CA" Argument="" Value1="RCT" Operator="" Value2=""/>
 	</Course>
-	<Course Section="MA 227D" Title="Multivariable Calculus" CallNumber="12844" MinCredit="3" MaxCredit="3" MaxEnrollment="55" CurrentEnrollment="51" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="MA 227D" Title="Multivariable Calculus" CallNumber="12844" MinCredit="3" MaxCredit="3" MaxEnrollment="55" CurrentEnrollment="50" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="MWF" StartTime="9:00:00Z" EndTime="9:50:00Z" Site="Castle Point" Building="X" Room="218A" Activity="LEC"/>
 		<Requirement Control="NQ" Argument="" Value1="MA  221" Operator="" Value2="MA  281"/>
 		<Requirement Control="CA" Argument="" Value1="RCT" Operator="" Value2=""/>
 	</Course>
-	<Course Section="MA 227RA" Title="Multivariable Calculus" CallNumber="12845" MinCredit="0" MaxCredit="0" MaxEnrollment="28" CurrentEnrollment="24" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="MA 227RA" Title="Multivariable Calculus" CallNumber="12845" MinCredit="0" MaxCredit="0" MaxEnrollment="28" CurrentEnrollment="25" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="R" StartTime="5:30:00Z" EndTime="6:20:00Z" Site="Castle Point" Building="P" Room="218" Activity="RCT"/>
 		<Requirement Control="NQ" Argument="" Value1="MA  221" Operator="" Value2="MA  281"/>
 		<Requirement Control="CA" Argument="" Value1="LEC" Operator="" Value2=""/>
@@ -6443,12 +6443,12 @@
 		<Requirement Control="NQ" Argument="" Value1="MA  221" Operator="" Value2="MA  281"/>
 		<Requirement Control="CA" Argument="" Value1="LEC" Operator="" Value2=""/>
 	</Course>
-	<Course Section="MA 227RG" Title="Multivariable Calculus" CallNumber="12851" MinCredit="0" MaxCredit="0" MaxEnrollment="28" CurrentEnrollment="25" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="MA 227RG" Title="Multivariable Calculus" CallNumber="12851" MinCredit="0" MaxCredit="0" MaxEnrollment="28" CurrentEnrollment="27" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="R" StartTime="10:00:00Z" EndTime="10:50:00Z" Site="Castle Point" Building="BC" Room="304" Activity="RCT"/>
 		<Requirement Control="NQ" Argument="" Value1="MA  221" Operator="" Value2="MA  281"/>
 		<Requirement Control="CA" Argument="" Value1="LEC" Operator="" Value2=""/>
 	</Course>
-	<Course Section="MA 227RH" Title="Multivariable Calculus" CallNumber="12852" MinCredit="0" MaxCredit="0" MaxEnrollment="28" CurrentEnrollment="22" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="MA 227RH" Title="Multivariable Calculus" CallNumber="12852" MinCredit="0" MaxCredit="0" MaxEnrollment="28" CurrentEnrollment="21" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="R" StartTime="11:30:00Z" EndTime="12:20:00Z" Site="Castle Point" Building="X" Room="414" Activity="RCT"/>
 		<Requirement Control="NQ" Argument="" Value1="MA  221" Operator="" Value2="MA  281"/>
 		<Requirement Control="CA" Argument="" Value1="LEC" Operator="" Value2=""/>
@@ -6467,7 +6467,7 @@
 	<Course Section="MA 293B" Title="Supp Tpcs of Differential Equatn" CallNumber="12856" MinCredit="1" MaxCredit="1" MaxEnrollment="4" CurrentEnrollment="0" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="MWF" StartTime="5:00:00Z" EndTime="5:50:00Z" Site="Castle Point" Building="X" Room="218A" Activity="LEC"/>
 	</Course>
-	<Course Section="MA 293C" Title="Supp Tpcs of Differential Equatn" CallNumber="13776" MinCredit="1" MaxCredit="1" MaxEnrollment="4" CurrentEnrollment="1" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="MA 293C" Title="Supp Tpcs of Differential Equatn" CallNumber="13776" MinCredit="1" MaxCredit="1" MaxEnrollment="4" CurrentEnrollment="2" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="MWF" StartTime="6:00:00Z" EndTime="6:50:00Z" Site="Castle Point" Building="" Room="" Activity="LEC"/>
 	</Course>
 	<Course Section="MA 293D" Title="Supp Tpcs of Differential Equatn" CallNumber="12857" MinCredit="1" MaxCredit="1" MaxEnrollment="4" CurrentEnrollment="1" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
@@ -6647,13 +6647,13 @@
 		<Requirement Control="R&amp;" Argument="" Value1="MA  221" Operator="" Value2="MA  281"/>
 		<Requirement Control="CA" Argument="" Value1="LEC" Operator="" Value2=""/>
 	</Course>
-	<Course Section="ME 354A" Title="Heat Transfer" CallNumber="13626" MinCredit="3" MaxCredit="3" MaxEnrollment="60" CurrentEnrollment="48" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Yang F" Term="2020F">
+	<Course Section="ME 354A" Title="Heat Transfer" CallNumber="13626" MinCredit="3" MaxCredit="3" MaxEnrollment="60" CurrentEnrollment="47" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Yang F" Term="2020F">
 		<Meeting Day="MWF" StartTime="7:00:00Z" EndTime="7:50:00Z" Site="Castle Point" Building="" Room="" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="MA  227" Operator="" Value2="MA  282"/>
 		<Requirement Control="R&amp;" Argument="" Value1="ME  234" Operator="" Value2="E   234"/>
 		<Requirement Control="R&amp;" Argument="" Value1="ME  342" Operator="" Value2=""/>
 	</Course>
-	<Course Section="ME 354B" Title="Heat Transfer" CallNumber="12907" MinCredit="3" MaxCredit="3" MaxEnrollment="60" CurrentEnrollment="53" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Parziale N" Term="2020F">
+	<Course Section="ME 354B" Title="Heat Transfer" CallNumber="12907" MinCredit="3" MaxCredit="3" MaxEnrollment="60" CurrentEnrollment="54" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Parziale N" Term="2020F">
 		<Meeting Day="MWF" StartTime="7:00:00Z" EndTime="7:50:00Z" Site="Castle Point" Building="B" Room="514" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="MA  227" Operator="" Value2="MA  282"/>
 		<Requirement Control="R&amp;" Argument="" Value1="ME  234" Operator="" Value2="E   234"/>
@@ -6727,7 +6727,7 @@
 	<Course Section="ME 519WS" Title="Solar Energy: System Designs" CallNumber="12929" MinCredit="3" MaxCredit="3" MaxEnrollment="0" CurrentEnrollment="2" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Cohn C" Term="2020F">
 		<Meeting Day="W" StartTime="14:15:00Z" EndTime="16:45:00Z" Site="WS" Building="" Room="" Activity="LEC"/>
 	</Course>
-	<Course Section="ME 520A" Title="Anal. &amp; Dsgn Composites" CallNumber="12930" MinCredit="3" MaxCredit="3" MaxEnrollment="39" CurrentEnrollment="26" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Pochiraju K" Term="2020F">
+	<Course Section="ME 520A" Title="Anal. &amp; Dsgn Composites" CallNumber="12930" MinCredit="3" MaxCredit="3" MaxEnrollment="39" CurrentEnrollment="25" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Pochiraju K" Term="2020F">
 		<Meeting Day="M" StartTime="11:00:00Z" EndTime="13:30:00Z" Site="Castle Point" Building="M" Room="103" Activity="LEC"/>
 	</Course>
 	<Course Section="ME 522A" Title="Mechatronics" CallNumber="12931" MinCredit="3" MaxCredit="3" MaxEnrollment="29" CurrentEnrollment="28" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Salman M" Term="2020F">
@@ -6754,7 +6754,7 @@
 	<Course Section="ME 540A" Title="Validation in Life Sci. Mfg." CallNumber="12938" MinCredit="3" MaxCredit="3" MaxEnrollment="0" CurrentEnrollment="3" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Shnayder L" Term="2020F">
 		<Meeting Day="W" StartTime="14:30:00Z" EndTime="17:00:00Z" Site="Castle Point" Building="E" Room="229" Activity="LEC"/>
 	</Course>
-	<Course Section="ME 554WS" Title="Intro Computer-Aided Dsn" CallNumber="12940" MinCredit="3" MaxCredit="3" MaxEnrollment="49" CurrentEnrollment="25" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Manna Y" Term="2020F">
+	<Course Section="ME 554WS" Title="Intro Computer-Aided Dsn" CallNumber="12940" MinCredit="3" MaxCredit="3" MaxEnrollment="49" CurrentEnrollment="26" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Manna Y" Term="2020F">
 		<Meeting Day="TBA" Site="WS" Building="OFF" Room="WEB" Activity="LEC"/>
 	</Course>
 	<Course Section="ME 555WS" Title="Lean Six Sigma" CallNumber="12941" MinCredit="3" MaxCredit="3" MaxEnrollment="49" CurrentEnrollment="16" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Shnayder L" Term="2020F">
@@ -7839,7 +7839,7 @@
 	<Course Section="PE 200G2" Title="Basketball" CallNumber="13814" MinCredit="0" MaxCredit="0" MaxEnrollment="24" CurrentEnrollment="24" Status="C" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Peluso G" Instructor2="Mykulak N" Term="2020F">
 		<Meeting Day="T" StartTime="8:30:00Z" EndTime="10:20:00Z" Site="Castle Point" Building="" Room="" Activity="PRA"/>
 	</Course>
-	<Course Section="PE 200G3" Title="Soccer" CallNumber="13255" MinCredit="0" MaxCredit="0" MaxEnrollment="35" CurrentEnrollment="34" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Jordan D" Instructor2="Mykulak N" Term="2020F">
+	<Course Section="PE 200G3" Title="Soccer" CallNumber="13255" MinCredit="0" MaxCredit="0" MaxEnrollment="35" CurrentEnrollment="35" Status="C" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Jordan D" Instructor2="Mykulak N" Term="2020F">
 		<Meeting Day="M" StartTime="9:00:00Z" EndTime="10:15:00Z" Site="Castle Point" Building="N/A" Room="N/A" Activity="PRA"/>
 	</Course>
 	<Course Section="PE 200G4" Title="Soccer" CallNumber="13256" MinCredit="0" MaxCredit="0" MaxEnrollment="35" CurrentEnrollment="35" Status="C" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Jordan D" Term="2020F">
@@ -7884,7 +7884,7 @@
 	<Course Section="PE 200I1" Title="Tennis" CallNumber="13267" MinCredit="0" MaxCredit="0" MaxEnrollment="14" CurrentEnrollment="14" Status="C" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="M" StartTime="11:00:00Z" EndTime="12:15:00Z" Site="Castle Point" Building="N/A" Room="N/A" Activity="PRA"/>
 	</Course>
-	<Course Section="PE 200I7" Title="BOOTCAMP 1" CallNumber="13269" MinCredit="0" MaxCredit="0" MaxEnrollment="15" CurrentEnrollment="14" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Carty B" Instructor2="Mykulak N" Term="2020F">
+	<Course Section="PE 200I7" Title="BOOTCAMP 1" CallNumber="13269" MinCredit="0" MaxCredit="0" MaxEnrollment="15" CurrentEnrollment="15" Status="C" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Carty B" Instructor2="Mykulak N" Term="2020F">
 		<Meeting Day="T" StartTime="15:00:00Z" EndTime="15:50:00Z" Site="Castle Point" Building="N/A" Room="N/A" Activity="PRA"/>
 	</Course>
 	<Course Section="PE 200I8" Title="Fall Outdoor Adventure" CallNumber="13270" MinCredit="0" MaxCredit="0" MaxEnrollment="30" CurrentEnrollment="31" Status="C" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Maurizi J" Instructor2="Mykulak N" Term="2020F">
@@ -8286,10 +8286,10 @@
 		<Meeting Day="R" StartTime="4:00:00Z" EndTime="5:50:00Z" Site="Castle Point" Building="" Room="" Activity="LAB"/>
 		<Requirement Control="CA" Argument="" Value1="LEC" Operator="" Value2=""/>
 	</Course>
-	<Course Section="PEP 151A" Title="Introduction to Astronomy" CallNumber="13352" MinCredit="3" MaxCredit="3" MaxEnrollment="70" CurrentEnrollment="64" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lu T" Term="2020F">
+	<Course Section="PEP 151A" Title="Introduction to Astronomy" CallNumber="13352" MinCredit="3" MaxCredit="3" MaxEnrollment="70" CurrentEnrollment="65" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lu T" Term="2020F">
 		<Meeting Day="TR" StartTime="8:30:00Z" EndTime="9:45:00Z" Site="Castle Point" Building="BC" Room="122" Activity="LEC"/>
 	</Course>
-	<Course Section="PEP 151B" Title="Introduction to Astronomy" CallNumber="13353" MinCredit="3" MaxCredit="3" MaxEnrollment="70" CurrentEnrollment="60" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lu T" Term="2020F">
+	<Course Section="PEP 151B" Title="Introduction to Astronomy" CallNumber="13353" MinCredit="3" MaxCredit="3" MaxEnrollment="70" CurrentEnrollment="61" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Lu T" Term="2020F">
 		<Meeting Day="TR" StartTime="5:30:00Z" EndTime="6:45:00Z" Site="Castle Point" Building="B" Room="118" Activity="LEC"/>
 	</Course>
 	<Course Section="PEP 187A" Title="Seminar in Physics" CallNumber="13354" MinCredit="1" MaxCredit="1" MaxEnrollment="30" CurrentEnrollment="6" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Staff A" Term="2020F">
@@ -8586,7 +8586,7 @@
 	<Course Section="QF 103A" Title="Intro to Financial Tools &amp; Tech" CallNumber="13428" MinCredit="1" MaxCredit="1" MaxEnrollment="30" CurrentEnrollment="10" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="F" StartTime="5:00:00Z" EndTime="5:50:00Z" Site="Castle Point" Building="BC" Room="HFSL" Activity="LEC"/>
 	</Course>
-	<Course Section="QF 103B" Title="Intro to Financial Tools &amp; Tech" CallNumber="13429" MinCredit="1" MaxCredit="1" MaxEnrollment="30" CurrentEnrollment="5" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="QF 103B" Title="Intro to Financial Tools &amp; Tech" CallNumber="13429" MinCredit="1" MaxCredit="1" MaxEnrollment="30" CurrentEnrollment="6" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="F" StartTime="6:00:00Z" EndTime="6:50:00Z" Site="Castle Point" Building="BC" Room="HFSL" Activity="LEC"/>
 	</Course>
 	<Course Section="QF 103C" Title="Intro to Financial Tools &amp; Tech" CallNumber="13430" MinCredit="1" MaxCredit="1" MaxEnrollment="30" CurrentEnrollment="10" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
@@ -8649,7 +8649,7 @@
 		<Requirement Control="RQ" Argument="" Value1="QF  202" Operator="" Value2=""/>
 		<Requirement Control="R&amp;" Argument="" Value1="QF  112" Operator="" Value2=""/>
 	</Course>
-	<Course Section="QF 301B" Title="Adv Time Ser Analy &amp; Mach Learn" CallNumber="13690" MinCredit="3" MaxCredit="3" MaxEnrollment="45" CurrentEnrollment="20" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
+	<Course Section="QF 301B" Title="Adv Time Ser Analy &amp; Mach Learn" CallNumber="13690" MinCredit="3" MaxCredit="3" MaxEnrollment="45" CurrentEnrollment="21" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="STAFF" Term="2020F">
 		<Meeting Day="MW" StartTime="9:00:00Z" EndTime="10:15:00Z" Site="Castle Point" Building="" Room="" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="QF  202" Operator="" Value2=""/>
 		<Requirement Control="R&amp;" Argument="" Value1="MA  331" Operator="" Value2="BT  221"/>
@@ -8789,7 +8789,7 @@
 		<Meeting Day="TBA" Site="Castle Point" Building="OFF" Room="TBA" Activity="PRA"/>
 		<Requirement Control="PDP" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
-	<Course Section="SSW 315A" Title="Object-Oriented Software Engnr" CallNumber="13473" MinCredit="3" MaxCredit="3" MaxEnrollment="39" CurrentEnrollment="33" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Yang Y" Term="2020F">
+	<Course Section="SSW 315A" Title="Object-Oriented Software Engnr" CallNumber="13473" MinCredit="3" MaxCredit="3" MaxEnrollment="39" CurrentEnrollment="34" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Yang Y" Term="2020F">
 		<Meeting Day="T" StartTime="8:30:00Z" EndTime="9:20:00Z" Site="Castle Point" Building="BC" Room="203" Activity="LEC"/>
 		<Meeting Day="F" StartTime="8:00:00Z" EndTime="9:50:00Z" Site="Castle Point" Building="BC" Room="203" Activity="LEC"/>
 		<Requirement Control="RQ" Argument="" Value1="SSW 215" Operator="" Value2=""/>
@@ -8818,7 +8818,7 @@
 	<Course Section="SSW 555B" Title="Agile Methods for Software Dev." CallNumber="13484" MinCredit="3" MaxCredit="3" MaxEnrollment="29" CurrentEnrollment="7" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Xiao L" Term="2020F">
 		<Meeting Day="R" StartTime="14:30:00Z" EndTime="17:00:00Z" Site="Castle Point" Building="C" Room="315" Activity="LEC"/>
 	</Course>
-	<Course Section="SSW 555WS" Title="Agile Methods for Software Dev." CallNumber="13485" MinCredit="3" MaxCredit="3" MaxEnrollment="49" CurrentEnrollment="17" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Rowland J" Term="2020F">
+	<Course Section="SSW 555WS" Title="Agile Methods for Software Dev." CallNumber="13485" MinCredit="3" MaxCredit="3" MaxEnrollment="49" CurrentEnrollment="18" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Rowland J" Term="2020F">
 		<Meeting Day="TBA" Site="WS" Building="OFF" Room="WEB" Activity="LEC"/>
 	</Course>
 	<Course Section="SSW 564A" Title="SW Requirements Analysis &amp; Eng." CallNumber="13486" MinCredit="3" MaxCredit="3" MaxEnrollment="39" CurrentEnrollment="20" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Macwan S" Term="2020F">
@@ -8834,7 +8834,7 @@
 		<Requirement Control="RQ" Argument="" Value1="SSW 540" Operator="" Value2=""/>
 		<Requirement Control="RQ" Argument="" Value1="CS  551" Operator="" Value2=""/>
 	</Course>
-	<Course Section="SSW 567WS" Title="SW Testing, Qual. Assur. &amp; Maint" CallNumber="13489" MinCredit="3" MaxCredit="3" MaxEnrollment="49" CurrentEnrollment="26" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Saremi R" Term="2020F">
+	<Course Section="SSW 567WS" Title="SW Testing, Qual. Assur. &amp; Maint" CallNumber="13489" MinCredit="3" MaxCredit="3" MaxEnrollment="49" CurrentEnrollment="27" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Saremi R" Term="2020F">
 		<Meeting Day="TBA" Site="WS" Building="OFF" Room="WEB" Activity="LEC"/>
 	</Course>
 	<Course Section="SSW 590A" Title="DevOps Principles and Practices" CallNumber="13659" MinCredit="3" MaxCredit="3" MaxEnrollment="29" CurrentEnrollment="15" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Rowland J" Term="2020F">
@@ -8917,7 +8917,7 @@
 		<Meeting Day="TBA" Site="Castle Point" Building="" Room="" Activity="QUZ"/>
 		<Requirement Control="PDP" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
-	<Course Section="SYS 632WS" Title="Desg Space Missions &amp; Systems" CallNumber="13515" MinCredit="3" MaxCredit="3" MaxEnrollment="49" CurrentEnrollment="4" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Staff A" Term="2020F">
+	<Course Section="SYS 632WS" Title="Desg Space Missions &amp; Systems" CallNumber="13515" MinCredit="3" MaxCredit="3" MaxEnrollment="49" CurrentEnrollment="5" Status="O" StartDate="2020-08-31Z" EndDate="2020-12-23Z" Instructor1="Staff A" Term="2020F">
 		<Meeting Day="TBA" Site="WS" Building="OFF" Room="WEB" Activity="LEC"/>
 		<Requirement Control="PUN" Argument="" Value1="" Operator="" Value2=""/>
 	</Course>
