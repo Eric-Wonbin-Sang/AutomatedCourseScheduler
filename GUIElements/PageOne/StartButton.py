@@ -32,5 +32,5 @@ class StartButton(Button):
             #                                      section.start_time.strftime('%I:%M %p'),
             #                                      section.end_time.strftime('%I:%M %p')))
         print("------------------")
-
+        self.acs_app.schedule_list = schedule_list
         self.acs_app.screen_manager.current = "two"

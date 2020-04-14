@@ -17,6 +17,7 @@ class ACSApp(App):
         super().__init__()
 
         self.stevens = Stevens.Stevens(term_key="2020F")
+        self.schedule_list = []
 
         self.screen_manager = ScreenManager()
 
