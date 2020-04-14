@@ -1,7 +1,6 @@
 from kivy.uix.button import Button
-from kivy.uix.label import Label
 
-from General import Functions
+from General import Functions, Kiveasy
 
 
 class ForwardButton(Button):
@@ -27,10 +26,10 @@ class ForwardButton(Button):
             if self.page_two.curr_schedule_index > len(self.acs_app.schedule_list) - 1:
                 self.page_two.curr_schedule_index = 0
 
-            label = Label(
+            label = Kiveasy.Label(
                 text="{}: {}".format(self.page_two.curr_schedule_index,
                                      self.acs_app.schedule_list[self.page_two.curr_schedule_index].url),
-                # color=(255, 255, 255)
+                color=[0, 0, 0]
             )
 
             Functions.add_to_layout(
