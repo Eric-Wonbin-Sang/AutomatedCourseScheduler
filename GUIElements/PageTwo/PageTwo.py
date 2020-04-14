@@ -55,7 +55,7 @@ class PageTwo(LayoutFactory.make_layout(BoxLayout)):
             spacing=15,
             padding=10,
             size_hint=(1, 1),
-            background_color=(255, 255, 255),
+            background_color=(235, 235, 235),
             pos_hint={'center_x': .5, 'center_y': .5}
         )
 

@@ -24,7 +24,14 @@ class BackButton(Button):
             Functions.clear_layout(self.page_two.schedule_layout)
 
             self.page_two.curr_schedule_index += -1
-            label = Label(text=self.acs_app.schedule_list[self.page_two.curr_schedule_index])
+            if self.page_two.curr_schedule_index < 0:
+                self.page_two.curr_schedule_index = len(self.acs_app.schedule_list) - 1
+
+            label = Label(
+                text="{}: {}".format(self.page_two.curr_schedule_index,
+                                     self.acs_app.schedule_list[self.page_two.curr_schedule_index].url),
+                # color=(255, 255, 255)
+            )
 
             Functions.add_to_layout(
                 self.page_two.schedule_layout,
