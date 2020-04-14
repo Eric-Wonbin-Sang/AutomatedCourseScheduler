@@ -14,8 +14,8 @@ class ScheduleArrowGroup(LayoutFactory.make_layout(BoxLayout)):
             orientation="horizontal",
             spacing=15,
             padding=10,
-            size_hint=(1, .2),
-            background_color=(255, 255, 255),
+            size_hint=(1, .1),
+            background_color=(194, 50, 50),
             pos_hint={'center_x': .5, 'center_y': .5}
         )
 

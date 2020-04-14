@@ -15,4 +15,4 @@ class ScheduleIndicatorLabel(Kiveasy.Label):
         self.text = self.label_text()
 
     def label_text(self):
-        return "Schedule #{}".format(self.page_two.curr_schedule_index + 1)
+        return "Schedule #{} - {}".format(self.page_two.curr_schedule_index + 1, len(self.page_two.acs_app.schedule_list))

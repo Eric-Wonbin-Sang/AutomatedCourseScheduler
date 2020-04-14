@@ -30,7 +30,7 @@ class ScheduleGraphicLayout(LayoutFactory.make_layout(BoxLayout)):
         Functions.add_to_layout(
             self,
             Kiveasy.Label(
-                text="No schedules generated"
+                text="No schedules could be generated"
             )
         )
 
@@ -41,7 +41,6 @@ class ScheduleGraphicLayout(LayoutFactory.make_layout(BoxLayout)):
         Functions.add_to_layout(
             self,
             Kiveasy.Label(
-                text="{}: {}".format(self.page_two.curr_schedule_index,
-                                     schedule.url)
+                text="{}".format(schedule.url)
             )
         )
