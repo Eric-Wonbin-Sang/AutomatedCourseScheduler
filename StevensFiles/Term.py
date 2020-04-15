@@ -1,4 +1,5 @@
-from Stevens import Subject, Course, Section
+
+from StevensFiles import Subject, Course, Section
 
 from General import Functions
 

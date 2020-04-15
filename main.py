@@ -1,32 +1,50 @@
-from Stevens import Stevens
+from kivy.app import App
+from kivy.core.window import Window
+from kivy.uix.screenmanager import ScreenManager
 
+from StevensFiles import Stevens
+
+from GUIElements import AppScreen
+from GUIElements.PageTwo import PageTwo
+from GUIElements.PageOne import PageOne
 from General import Functions
+
+
+class ACSApp(App):
+
+    def __init__(self):
+
+        super().__init__()
+
+        self.stevens = Stevens.Stevens(term_key="2020F")
+        self.schedule_list = []
+
+        self.screen_manager = ScreenManager()
+
+        self.screen_one = AppScreen.AppScreen(name="one",
+                                              child_widget=PageOne.PageOne(acs_app=self, stevens=self.stevens))
+        self.screen_two = AppScreen.AppScreen(name="two",
+                                              child_widget=PageTwo.PageTwo(acs_app=self, stevens=self.stevens))
+
+    def build(self):
+
+        Functions.add_to_layout(
+            self.screen_manager,
+            self.screen_one,
+            self.screen_two
+        )
+
+        return self.screen_manager
 
 
 def main():
 
-    stevens = Stevens.Stevens()
+    scalar = 110
+    window_width_ratio = 5
+    window_height_ratio = 7
 
-    # for subject in stevens.term.subject_list:
-    #     for course in subject.course_list:
-    #         for section in course.section_list:
-    #             # print(section.__str__(print_section_dicts=True))
-    #             print(section.activity, section.section)
-
-    # activity_list = []
-    # for subject in stevens.term.subject_list:
-    #     for course in subject.course_list:
-    #         print(Functions.dict_to_string(course.activity_dict))
-    #         print("---------------------------")
-    #         # for section in course.section_list:
-    #         #     print(type(section.activity), section.activity)
-    #         #     if section.activity not in activity_list:
-    #         #         activity_list.append(section.activity)
-    #         #         print("{} ----------------------".format(section.activity))
-    #         #         # print(section.__str__(print_section_dicts=True))
-    #
-    # for activity in activity_list:
-    #     print(type(activity), activity)
+    Window.size = (int(window_width_ratio * scalar), int(window_height_ratio * scalar))
+    ACSApp().run()
 
 
 main()

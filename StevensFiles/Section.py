@@ -36,6 +36,7 @@ class Section:
         self.parent_course = parent_course
 
         self.day_list = Functions.find_first_occurrence_in_dicts("day", *self.meeting_dict_list)
+
         self.start_time, self.end_time = self.get_times()
         self.time_dict = self.get_time_dict()
 

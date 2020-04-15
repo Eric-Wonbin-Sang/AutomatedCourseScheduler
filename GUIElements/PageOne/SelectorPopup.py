@@ -8,7 +8,7 @@ from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
 from kivy.uix.scrollview import ScrollView
 
-from Stevens import Section
+from StevensFiles import Section
 
 from General import Functions, Constants
 

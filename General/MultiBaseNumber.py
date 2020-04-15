@@ -7,6 +7,14 @@ class MultiBaseNumber:
         self.length = len(base_list)
         self.value_list = [0] * self.length
 
+        self.possible_iteration_count = self.get_possible_iteration_count()
+
+    def get_possible_iteration_count(self):
+        possible_iteration_count = 1
+        for base in self.base_list:
+            possible_iteration_count *= base
+        return possible_iteration_count
+
     def iterate(self):
 
         self.value_list[-1] += 1

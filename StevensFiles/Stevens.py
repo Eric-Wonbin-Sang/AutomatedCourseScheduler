@@ -1,8 +1,8 @@
-import requests
+import urllib.request
 import xml.etree.ElementTree as Et
 import random
 
-from Stevens import Term
+from StevensFiles import Term
 
 from General import Functions, Constants
 
@@ -16,11 +16,9 @@ class Stevens:
 
     def get_term(self):
 
-        xml_file_name = "Stevens/XML Sources" + self.term_key + ".xml"
+        xml_file_name = "StevensFiles/XML Sources/" + self.term_key + ".xml"
         if Functions.is_connected():
-            xml = requests.get(Constants.term_url_dict[self.term_key], allow_redirects=True)
-            open(xml_file_name, 'wb').write(xml.content)
-
+            urllib.request.urlretrieve(Constants.term_url_dict[self.term_key], xml_file_name)
         return Term.Term(Et.parse(xml_file_name))
 
     def get_rand_course(self):

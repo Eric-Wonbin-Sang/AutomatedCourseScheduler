@@ -3,13 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="83123390-fab2-4dbb-9dad-28d44ba2b183" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUIElements/PageOne/StartButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageOne/StartButton.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo/BackButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo/BackButton.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo/ForwardButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo/ForwardButton.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo/PageTwo.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo/PageTwo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUIElements/PageTwo/ScheduleGraphicLayout.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageTwo/ScheduleGraphicLayout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/General/Functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/General/Functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stevens/XML Sources2020F.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Stevens/XML Sources2020F.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIElements/PageOne/SelectorPopup.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIElements/PageOne/SelectorPopup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/General/MultiBaseNumber.py" beforeDir="false" afterPath="$PROJECT_DIR$/General/MultiBaseNumber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stevens/Course.py" beforeDir="false" afterPath="$PROJECT_DIR$/StevensFiles/Course.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stevens/MyStevens.py" beforeDir="false" afterPath="$PROJECT_DIR$/StevensFiles/MyStevens.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stevens/Section.py" beforeDir="false" afterPath="$PROJECT_DIR$/StevensFiles/Section.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stevens/Stevens.py" beforeDir="false" afterPath="$PROJECT_DIR$/StevensFiles/Stevens.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stevens/Subject.py" beforeDir="false" afterPath="$PROJECT_DIR$/StevensFiles/Subject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stevens/Term.py" beforeDir="false" afterPath="$PROJECT_DIR$/StevensFiles/Term.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stevens/XML Sources/2020F.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StevensFiles/XML Sources/2020F.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stevens/XML Sources/2020S.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StevensFiles/XML Sources/2020S.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stevens/XML Sources2020F.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stevens/term_select" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,9 +45,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\gener\CodingProjects\AutomatedCourseScheduler\Stevens" />
-      <recent name="C:\Users\gener\CodingProjects\AutomatedCourseScheduler\General" />
-      <recent name="C:\Users\gener\CodingProjects\AutomatedCourseScheduler" />
+      <recent name="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler\Stevens" />
+      <recent name="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler\General" />
+      <recent name="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler\Images" />
@@ -61,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.gui">
+  <component name="RunManager" selected="Python.main">
     <configuration name="MultiBaseNumber" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AutomatedCourseScheduler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,7 +77,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\gener\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\ericw\AppData\Local\Programs\Python\Python37-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/General" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -90,7 +98,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\gener\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\ericw\AppData\Local\Programs\Python\Python37-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Stevens" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -111,12 +119,12 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\gener\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\ericw\AppData\Local\Programs\Python\Python37-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\gener\CodingProjects\AutomatedCourseScheduler\testing.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler\testing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -132,7 +140,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\gener\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\ericw\AppData\Local\Programs\Python\Python37-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -153,12 +161,12 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\gener\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\ericw\AppData\Local\Programs\Python\Python37-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\ericw\CodingProjects\AutomatedCourseScheduler\main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,7 +182,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\gener\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\ericw\AppData\Local\Programs\Python\Python37-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -197,10 +205,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.gui" />
-        <item itemvalue="Python.MyStevens" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.gui" />
         <item itemvalue="Python.MultiBaseNumber" />
+        <item itemvalue="Python.MyStevens" />
         <item itemvalue="Python.Test" />
       </list>
     </recent_temporary>
